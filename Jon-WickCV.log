@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/nixos.org) (preloaded format=pdflatex 1980.1.1)  3 MAY 2025 11:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/nixos.org) (preloaded format=pdflatex 1980.1.1)  3 MAY 2025 11:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -702,24 +702,24 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 174.
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 183.
+nput line 182.
 
 (/nix/store/0jql6cn8jrks2l11dkisx5rl7nggaybg-texlive-2024-env-texmfdist/tex/lat
 ex/fontawesome5/ufontawesomefree2.fd)
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 188.
+nput line 187.
 
 (/nix/store/0jql6cn8jrks2l11dkisx5rl7nggaybg-texlive-2024-env-texmfdist/tex/lat
 ex/fontawesome5/ufontawesomefree1.fd)
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
- input line 203.
+ input line 202.
 
 (/nix/store/0jql6cn8jrks2l11dkisx5rl7nggaybg-texlive-2024-env-texmfdist/tex/lat
 ex/fontawesome5/ufontawesomebrands0.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not 
 available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 203.
+n input line 202.
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands1 on
  input line 212.
 
@@ -730,9 +730,9 @@ available
 (Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead o
 n input line 212.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 246.
+(Font)              <9> on input line 249.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 246.
+(Font)              <6> on input line 249.
 
 
 [1
@@ -763,7 +763,7 @@ Here is how much of TeX's memory you used:
  38662 multiletter control sequences out of 15000+600000
  598223 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,80p,372b,519s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,80p,395b,519s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </nix/store/0jql6cn8jrks2l11dkisx5rl7nggaybg-texlive-2024-env-texmfdist/fonts
 /type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></nix/store/0jql6cn8j
 rks2l11dkisx5rl7nggaybg-texlive-2024-env-texmfdist/fonts/type1/public/fontaweso
@@ -776,7 +776,7 @@ v-texmfdist/fonts/type1/bitstrea/charter/bchr8a.pfb></nix/store/0jql6cn8jrks2l1
 8a.pfb></nix/store/0jql6cn8jrks2l11dkisx5rl7nggaybg-texlive-2024-env-texmfdist/
 fonts/type1/public/lm/lmsy10.pfb></nix/store/0jql6cn8jrks2l11dkisx5rl7nggaybg-t
 exlive-2024-env-texmfdist/fonts/type1/public/lm/lmsy9.pfb>
-Output written on Jon-WickCV.pdf (2 pages, 122615 bytes).
+Output written on Jon-WickCV.pdf (2 pages, 122430 bytes).
 PDF statistics:
  116 PDF objects out of 1000 (max. 8388607)
  93 compressed objects within 1 object stream
