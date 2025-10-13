@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/nixos.org) (preloaded format=pdflatex 1980.1.1)  13 OCT 2025 10:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/nixos.org) (preloaded format=pdflatex 1980.1.1)  13 OCT 2025 10:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -785,37 +785,51 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 177.
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 185.
+nput line 210.
 
 (/nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-env-texmfdist/tex/lat
 ex/fontawesome5/ufontawesomefree2.fd)
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 190.
+nput line 210.
 
 (/nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-env-texmfdist/tex/lat
 ex/fontawesome5/ufontawesomefree1.fd)
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
- input line 205.
+ input line 210.
 
 (/nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-env-texmfdist/tex/lat
 ex/fontawesome5/ufontawesomebrands0.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not 
 available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 205.
+n input line 210.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211         \newline
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands1 on
- input line 215.
+ input line 224.
 
 (/nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-env-texmfdist/tex/lat
 ex/fontawesome5/ufontawesomebrands1.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands1/solid/n' in size <10> not 
 available
 (Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead o
-n input line 215.
+n input line 224.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 261.
+(Font)              <9> on input line 269.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 261.
+(Font)              <6> on input line 269.
 
 Overfull \vbox (4.72226pt too high) has occurred while \output is active []
 
@@ -862,7 +876,7 @@ d5jdyc1b1ippksx3c-texlive-2024-env-texmfdist/fonts/type1/bitstrea/charter/bchri
 8a.pfb></nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-env-texmfdist/
 fonts/type1/public/lm/lmsy10.pfb></nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-t
 exlive-2024-env-texmfdist/fonts/type1/public/lm/lmsy9.pfb>
-Output written on Jon-WickCV.pdf (2 pages, 126005 bytes).
+Output written on Jon-WickCV.pdf (2 pages, 126023 bytes).
 PDF statistics:
  115 PDF objects out of 1000 (max. 8388607)
  92 compressed objects within 1 object stream
