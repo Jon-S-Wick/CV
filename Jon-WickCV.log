@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/nixos.org) (preloaded format=pdflatex 1980.1.1)  19 OCT 2025 13:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/nixos.org) (preloaded format=pdflatex 1980.1.1)  27 OCT 2025 05:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -715,18 +715,18 @@ LaTeX Font Info:    ... okay on input line 172.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includefoot 
 * h-part:(L,W,R)=(56.9055pt, 500.484pt, 56.9055pt)
-* v-part:(T,H,B)=(28.45274pt, 752.29088pt, 14.22636pt)
+* v-part:(T,H,B)=(14.22636pt, 766.51726pt, 14.22636pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=500.484pt
-* \textheight=718.14766pt
+* \textheight=695.38538pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
-* \topmargin=-80.81725pt
+* \topmargin=-95.04362pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=0.0pt
-* \footskip=34.14322pt
+* \footskip=71.13188pt
 * \marginparwidth=65.0pt
 * \marginparsep=11.0pt
 * \columnsep=4.26773pt
@@ -840,12 +840,11 @@ available
 (Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead o
 n input line 225.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 270.
+(Font)              <9> on input line 268.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 270.
+(Font)              <6> on input line 268.
 
-Overfull \vbox (26.03682pt too high) has occurred while \output is active []
-
+Overfull \vbox (15.34637pt too high) has occurred while \output is active []
 
 
 [1
@@ -861,6 +860,40 @@ tore/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-env-texmfdist/fonts/enc/dvip
 s/fontawesome5/fa5brands0.enc}{/nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-texl
 ive-2024-env-texmfdist/fonts/enc/dvips/fontawesome5/fa5brands1.enc}]
 
+! LaTeX Error: \begin{document} ended by \end{samepage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.443    \end{samepage}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+\end  ...end#1\endcsname \@checkend {#1}\endgroup 
+                                                  \UseHook {env/#1/after}\if...
+l.443    \end{samepage}
+                       
+Things are pretty mixed up, but I think the worst is over.
+
+
+! LaTeX Error: \begin{samepage} on input line 446 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.517 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+
 [2] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./Jon-WickCV.aux)
@@ -868,28 +901,32 @@ enddocument/afterlastpage (AED): lastpage setting LastPage.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 446 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
  17075 strings out of 473203
  299183 string characters out of 5692202
- 725213 words of memory out of 5000000
+ 722217 words of memory out of 5000000
  40049 multiletter control sequences out of 15000+600000
  598991 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,1041b,575s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-env-texmfdist/fonts
-/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></nix/store/kab81cjb4
-mqgwbmd5jdyc1b1ippksx3c-texlive-2024-env-texmfdist/fonts/type1/public/fontaweso
-me5/FontAwesome5Free-Solid.pfb></nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-tex
-live-2024-env-texmfdist/fonts/type1/bitstrea/charter/bchb8a.pfb></nix/store/kab
-81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-env-texmfdist/fonts/type1/bitstrea/c
-harter/bchbi8a.pfb></nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-en
-v-texmfdist/fonts/type1/bitstrea/charter/bchr8a.pfb></nix/store/kab81cjb4mqgwbm
-d5jdyc1b1ippksx3c-texlive-2024-env-texmfdist/fonts/type1/bitstrea/charter/bchri
-8a.pfb></nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-env-texmfdist/
-fonts/type1/public/lm/lmsy10.pfb></nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-t
-exlive-2024-env-texmfdist/fonts/type1/public/lm/lmsy9.pfb>
-Output written on Jon-WickCV.pdf (2 pages, 126159 bytes).
+ 75i,11n,79p,1041b,865s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-env-t
+exmfdist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></nix/s
+tore/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-env-texmfdist/fonts/type1/pu
+blic/fontawesome5/FontAwesome5Free-Solid.pfb></nix/store/kab81cjb4mqgwbmd5jdyc1
+b1ippksx3c-texlive-2024-env-texmfdist/fonts/type1/bitstrea/charter/bchb8a.pfb><
+/nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-env-texmfdist/fonts/ty
+pe1/bitstrea/charter/bchbi8a.pfb></nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-t
+exlive-2024-env-texmfdist/fonts/type1/bitstrea/charter/bchr8a.pfb></nix/store/k
+ab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-env-texmfdist/fonts/type1/bitstrea
+/charter/bchri8a.pfb></nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-
+env-texmfdist/fonts/type1/public/lm/lmsy10.pfb></nix/store/kab81cjb4mqgwbmd5jdy
+c1b1ippksx3c-texlive-2024-env-texmfdist/fonts/type1/public/lm/lmsy9.pfb>
+Output written on Jon-WickCV.pdf (2 pages, 128552 bytes).
 PDF statistics:
  115 PDF objects out of 1000 (max. 8388607)
  92 compressed objects within 1 object stream
