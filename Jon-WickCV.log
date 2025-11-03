@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/nixos.org) (preloaded format=pdflatex 1980.1.1)  27 OCT 2025 05:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/nixos.org) (preloaded format=pdflatex 1980.1.1)  3 NOV 2025 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -844,7 +844,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 268.
 
-Overfull \vbox (15.34637pt too high) has occurred while \output is active []
+Overfull \vbox (46.5468pt too high) has occurred while \output is active []
+
 
 
 [1
@@ -866,7 +867,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.443    \end{samepage}
+l.437    \end{samepage}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -875,18 +876,18 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 \end  ...end#1\endcsname \@checkend {#1}\endgroup 
                                                   \UseHook {env/#1/after}\if...
-l.443    \end{samepage}
+l.437    \end{samepage}
                        
 Things are pretty mixed up, but I think the worst is over.
 
 
-! LaTeX Error: \begin{samepage} on input line 446 ended by \end{document}.
+! LaTeX Error: \begin{samepage} on input line 440 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.517 \end{document}
+l.511 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -904,16 +905,16 @@ L3 programming layer <2025-01-18>
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 446 (\begingroup)
+### semi simple group (level 1) entered at line 440 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
  17075 strings out of 473203
  299183 string characters out of 5692202
- 722217 words of memory out of 5000000
+ 726217 words of memory out of 5000000
  40049 multiletter control sequences out of 15000+600000
  598991 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,1041b,865s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,1041b,634s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-env-t
 exmfdist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></nix/s
 tore/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-env-texmfdist/fonts/type1/pu
@@ -926,7 +927,7 @@ ab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-env-texmfdist/fonts/type1/bitstrea
 /charter/bchri8a.pfb></nix/store/kab81cjb4mqgwbmd5jdyc1b1ippksx3c-texlive-2024-
 env-texmfdist/fonts/type1/public/lm/lmsy10.pfb></nix/store/kab81cjb4mqgwbmd5jdy
 c1b1ippksx3c-texlive-2024-env-texmfdist/fonts/type1/public/lm/lmsy9.pfb>
-Output written on Jon-WickCV.pdf (2 pages, 128552 bytes).
+Output written on Jon-WickCV.pdf (2 pages, 129189 bytes).
 PDF statistics:
  115 PDF objects out of 1000 (max. 8388607)
  92 compressed objects within 1 object stream
