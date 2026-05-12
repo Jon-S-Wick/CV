@@ -12,7 +12,7 @@
     bottom=0.5 cm, % seperation between body and page edge from the bottom
     left=2 cm, % seperation between body and page edge from the left
     right=2 cm, % seperation between body and page edge from the right
-    footskip=2.5 cm, % seperation between body and footer
+    footskip=2.0 cm, % seperation between body and footer
     % showframe % for debugging
 ]{geometry} % for adjusting page geometry
 \usepackage{titlesec} % for customizing section titles
@@ -191,26 +191,25 @@
         \kern 5.0 pt%
         \faEnvelopeOpenText \
         \mbox{\href{mailto:wickj2@wwu.edu}{wickj2@wwu.edu}}%
-        % \kern 5.0 pt%
-        % \AND%
-        % \kern 5.0 pt
-        % \faPhone* \
-        % \mbox{\hrefWithoutArrow{tel:253-778-3453}{(253)778-3453}}%
-        % \kern 5.0 pt% TODO
-        % \AND%
-        % \kern 5.0 pt%
-        % \faGlobe
-        % \mbox{\hrefWithoutArrow{https://JonWick-Bioscience.com/}{JonWick-Bioscience.com}}%
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
+        \faEnvelopeOpenText \
+\textul{\mbox{\href{mailto:jonwick@wickbioscience.com}{jonwick@wickbioscience.com}}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \faGlobe \
+\mbox{\hrefWithoutArrow{https://wickbioscience.com}{wickbioscience.com}}}
+        \centerline{
         \faGithub \
         \mbox{\hrefWithoutArrow{https://github.com/Jon-S-Wick}{github.com/Jon-S-Wick}} \
         % \AND%
 
-        }
-        \newline
-        \centerline{
+        
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
         % \kern 5.0 pt%
         % \AND%
         % \kern 5.0 pt%
@@ -234,11 +233,12 @@
 
 
         \begin{onecolentry}
-            I am an undergraduate researcher at Western Washington University (WWU) interested in combining my understanding of biology and computer science to advance the body of
+\hspace{1cm} I am an undergraduate researcher at Western Washington University (WWU) interested in combining my understanding of biology and computer science to advance the body of
            knowledge of biological phenomena.
           Currently, I am a member of the Lee lab at WWU
           using computational biology to investigate the role of small RNAs in maintaining genome integrity within the model organism \textit{Tetrahymena thermophila}. 
          Once I graduate, I plan on continuing a career in molecular biology research. 
+I am particularly interested in translational research investigating the causes and potential treatments of cancer and neurodegenerative diseases. 
         \end{onecolentry}
 
 
@@ -256,7 +256,7 @@
           \textbf{B.S. Molecular and Cellular Biology}, Computer Science minor 
         \end{twocolentry}
         \begin{twocolentry}{
-            Expected June 2026
+            Graduating June 2026
         }
             Western Washington University -- Bellingham, WA 
 
@@ -265,8 +265,10 @@
         % \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-            \item \textbf{GPA}: 3.73/4.0 %(\href{https://example.com}{a link to somewhere})
-                \item \textbf{Upper Division Coursework:} Advanced Cell and Molec Lab, Genomic Data Analysis, Cellular and Molecular Biology, Biochemistry, Microbiology, Biostatistics, Cell and Molec Lab, Genetics, Organic Chemistry series, Evolution.
+            \item \textbf{GPA}: 3.53/4.0 %(\href{https://example.com}{a link to somewhere})
+\item \textbf{Relevant Upper Division Coursework:} Advanced Cell and Molec Lab, Immunobiology, Biochemistry (1 and 2) Genomic Data Analysis,
+Cellular and Molecular Biology, Microbiology, Biostatistics, Cell and Molec Lab,
+Genetics, Organic Chemistry series, Evolution, Numerical Analysis, Formal Language Programming, Database Systems.
 
             \end{highlights}
         \end{onecolentry}
@@ -297,9 +299,10 @@
         \begin{onecolentry}
             \begin{highlights}
             \item Investigate roles of sRNAs in an RNAi pathway responsible for maintaining genome integrity in \textit{Tetrahymena thermophila} using computational biology and genomic sequence analysis.
+            \item Developed new pipelines for sRNA biogensis loci identification and analysis.
             \item Develop new tools and apply existing tools using R, Python, Bash, C, and C++.
             \item Prepared presentations for round tables, lab meetings, and journal clubs.
-            \item Participated full-time in the WWU Biology Summer Undergraduate Research Program (SURP).
+            \item Participated full-time in the WWU Biology Summer GlobeUndergraduate Research Program (SURP).
             \item Performed Western Blots, maintained \textit{Tetrahymena} cells, and performed literature reviews to progress the goals of the lab.
             \end{highlights}
         \end{onecolentry}
@@ -321,7 +324,7 @@
         \end{onecolentry}
         \vspace{0.2 cm}
         \begin{twocolentry}{ 
-            May 2022 - July 2023
+            May 2022 - December 2022
 
           }
         \textbf{Biotech Research Intern}, Rain Incubator -- Tacoma, WA\end{twocolentry}
@@ -338,7 +341,7 @@
 
     \begin{samepage}
 
-    \section{Research-based Courses}
+    \section{Research-based Coursework}
 
     \begin{twocolentry}
       {Spring 2025}
@@ -490,18 +493,21 @@
 
 
         \begin{onecolentry}
-            {\textbf{Molecular Techniques:}} Genomic Data Analysis, Western Blot, PCR, Reverse Transcriptase PCR
+            {\textbf{Biology Skills:}} Genomic Data Analysis, Cell maintenance, cell culture, Western Blot, PCR, Reverse Transcriptase PCR
         \end{onecolentry}
         \vspace{0.2 cm}
         \begin{onecolentry}
-            \textbf{Programming Languages:} Python, Java, Nix, C++, C, R, JavaScript
+            \textbf{Programming Languages:} Python, Java, Nix, R, C++, C, JavaScript, SQL
         \end{onecolentry}
 
         \vspace{0.2 cm}
 
         \begin{onecolentry}
-            \textbf{Software:} Command Line Interface, Benchling, Microsoft Office/Libre Office, Jupyter Notebook, Linux, NixOS, ImageJ, React, bun, Secure Shell (SSH), NeoVim
+            \textbf{Software:} Command Line Interface, Benchling, Microsoft Office/Libre Office, Jupyter Notebook, 
+                    Linux, NixOS, ImageJ, React, bun, Secure Shell (SSH), NeoVim, Snapgene
         \end{onecolentry}
+%     \section{References}
+% Available upon request.
      
 
 
