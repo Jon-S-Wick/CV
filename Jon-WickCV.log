@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/nixos.org) (preloaded format=pdflatex 1980.1.1)  12 MAY 2026 11:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/nixos.org) (preloaded format=pdflatex 1980.1.1)  24 MAY 2026 10:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -823,9 +823,9 @@ available
 (Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead o
 n input line 224.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 268.
+(Font)              <9> on input line 264.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 268.
+(Font)              <6> on input line 264.
  [1
 
 {/nix/store/8qfb3pmbnsf9fp561fb3bi50y59j49rb-texlive-2025-r75669-env/share/texm
@@ -845,7 +845,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.440    \end{samepage}
+l.436    \end{samepage}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -854,18 +854,18 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 \end  ...end#1\endcsname \@checkend {#1}\endgroup 
                                                   \UseHook {env/#1/after}\if...
-l.440    \end{samepage}
+l.436    \end{samepage}
                        
 Things are pretty mixed up, but I think the worst is over.
 
 
-! LaTeX Error: \begin{samepage} on input line 443 ended by \end{document}.
+! LaTeX Error: \begin{samepage} on input line 439 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.517 \end{document}
+l.513 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -883,12 +883,12 @@ L3 programming layer <2025-06-09>
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 443 (\begingroup)
+### semi simple group (level 1) entered at line 439 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
  17016 strings out of 467890
  296544 string characters out of 5411706
- 730300 words of memory out of 5000000
+ 729300 words of memory out of 5000000
  45299 multiletter control sequences out of 15000+600000
  666979 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -905,7 +905,7 @@ x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/type1/bitstrea/charter/bchri8a.p
 fb></nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/t
 ype1/public/lm/lmsy10.pfb></nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-
 2025-r75669-env/fonts/type1/public/lm/lmsy9.pfb>
-Output written on Jon-WickCV.pdf (2 pages, 129902 bytes).
+Output written on Jon-WickCV.pdf (2 pages, 129878 bytes).
 PDF statistics:
  117 PDF objects out of 1000 (max. 8388607)
  94 compressed objects within 1 object stream
