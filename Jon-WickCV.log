@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/nixos.org) (preloaded format=pdflatex 1980.1.1)  24 MAY 2026 10:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/nixos.org) (preloaded format=pdflatex 1980.1.1)  18 JUN 2026 12:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -705,14 +705,14 @@ LaTeX Font Info:    ... okay on input line 172.
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=500.484pt
-* \textheight=709.61176pt
+* \textheight=738.06451pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
 * \topmargin=-95.04362pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=0.0pt
-* \footskip=56.9055pt
+* \footskip=28.45274pt
 * \marginparwidth=65.0pt
 * \marginparsep=11.0pt
 * \columnsep=4.26773pt
@@ -823,10 +823,15 @@ available
 (Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead o
 n input line 224.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 264.
+(Font)              <9> on input line 259.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 264.
- [1
+(Font)              <6> on input line 259.
+
+Overfull \vbox (15.7131pt too high) has occurred while \output is active []
+
+
+
+[1
 
 {/nix/store/8qfb3pmbnsf9fp561fb3bi50y59j49rb-texlive-2025-r75669-env/share/texm
 f-var/fonts/map/pdftex/updmap/pdftex.map}{/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i
@@ -845,8 +850,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.436    \end{samepage}
-                       
+l.420 \end{samepage}
+                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -854,18 +859,18 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 \end  ...end#1\endcsname \@checkend {#1}\endgroup 
                                                   \UseHook {env/#1/after}\if...
-l.436    \end{samepage}
-                       
+l.420 \end{samepage}
+                    
 Things are pretty mixed up, but I think the worst is over.
 
 
-! LaTeX Error: \begin{samepage} on input line 439 ended by \end{document}.
+! LaTeX Error: \begin{samepage} on input line 423 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.513 \end{document}
+l.495 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -880,35 +885,43 @@ enddocument/afterlastpage (AED): lastpage setting LastPage.
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 439 (\begingroup)
+### semi simple group (level 1) entered at line 423 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 17016 strings out of 467890
- 296544 string characters out of 5411706
- 729300 words of memory out of 5000000
+ 17017 strings out of 467890
+ 296550 string characters out of 5411706
+ 733314 words of memory out of 5000000
  45299 multiletter control sequences out of 15000+600000
  666979 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,1041b,871s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r7566
-9-env/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></nix/stor
-e/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/type1/public/f
-ontawesome5/FontAwesome5Free-Solid.pfb></nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62
-g7kh-texlive-2025-r75669-env/fonts/type1/bitstrea/charter/bchb8a.pfb></nix/stor
-e/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/type1/bitstrea
-/charter/bchbi8a.pfb></nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-
-r75669-env/fonts/type1/bitstrea/charter/bchr8a.pfb></nix/store/ay5d7jampvjzcqz7
-x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/type1/bitstrea/charter/bchri8a.p
-fb></nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/t
-ype1/public/lm/lmsy10.pfb></nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-
-2025-r75669-env/fonts/type1/public/lm/lmsy9.pfb>
-Output written on Jon-WickCV.pdf (2 pages, 129878 bytes).
+ 75i,11n,79p,1041b,642s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{page.3} has been referenced but does not exist, rep
+laced by a fixed one
+
+</nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/type
+1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></nix/store/ay5d7jampvjzcq
+z7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/type1/public/fontawesome5/Font
+Awesome5Free-Solid.pfb></nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-202
+5-r75669-env/fonts/type1/bitstrea/charter/bchb8a.pfb></nix/store/ay5d7jampvjzcq
+z7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/type1/bitstrea/charter/bchbi8a
+.pfb></nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts
+/type1/bitstrea/charter/bchr8a.pfb></nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh
+-texlive-2025-r75669-env/fonts/type1/bitstrea/charter/bchri8a.pfb></nix/store/a
+y5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/type1/public/lm/l
+msy10.pfb></nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/
+fonts/type1/public/lm/lmsy9.pfb>
+Output written on Jon-WickCV.pdf (2 pages, 129965 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
+ 119 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -12,7 +12,7 @@
     bottom=0.5 cm, % seperation between body and page edge from the bottom
     left=2 cm, % seperation between body and page edge from the left
     right=2 cm, % seperation between body and page edge from the right
-    footskip=2.0 cm, % seperation between body and footer
+    footskip=1.0 cm, % seperation between body and footer
     % showframe % for debugging
 ]{geometry} % for adjusting page geometry
 \usepackage{titlesec} % for customizing section titles
@@ -170,346 +170,323 @@
 
 
 \begin{document}
-    \newcommand{\AND}{\unskip
-        \cleaders\copy\ANDbox\hskip\wd\ANDbox
-        \ignorespaces
-    }
-    \newsavebox\ANDbox
-    \sbox\ANDbox{$|$}
-
-    \begin{header}
-        \fontsize{25 pt}{25 pt}\selectfont Jon Wick
+\newcommand{\AND}{\unskip
+	\cleaders\copy\ANDbox\hskip\wd\ANDbox
+	\ignorespaces
+}
+\newsavebox\ANDbox
+\sbox\ANDbox{$|$}
 
-        \vspace{5 pt}
+\begin{header}
+	\fontsize{25 pt}{25 pt}\selectfont Jon Wick
 
-        \normalsize
-        \centerline{
-        \faMapMarker* \
-        \mbox{Bellingham WA, 98225}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \faEnvelopeOpenText \
-\textul{\mbox{\href{mailto:jonwick@wickbioscience.com}{jonwick@wickbioscience.com}}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \faEnvelopeOpenText \
-        \mbox{\href{mailto:wickj2@wwu.edu}{wickj2@wwu.edu}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \faGlobe \
-\mbox{\hrefWithoutArrow{https://wickbioscience.com}{wickbioscience.com}}}
-        \centerline{
-        \faGithub \
-        \mbox{\hrefWithoutArrow{https://github.com/Jon-S-Wick}{github.com/Jon-S-Wick}} \
-        % \AND%
+	\vspace{2 pt}
 
-        
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        % \kern 5.0 pt%
-        % \AND%
-        % \kern 5.0 pt%
-        \faLinkedin \
-        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/jonathan-wick-75aa52277/}{linkedin.com/in/jonathan-wick-75aa52277}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \faOrcid  \
-        \mbox{\hrefWithoutArrow{https://orcid.org/0009-0006-6282-2458}{Orcid ID:0009-0006-6282-2458}}%
+	\normalsize
+	\centerline{
+		\faMapMarker* \
+		\mbox{Bellingham WA, 98225}%
+		\kern 5.0 pt%
+		\AND%
+		\kern 5.0 pt%
+		\faEnvelopeOpenText \
+		\textul{\mbox{\href{mailto:jonwick@wickbioscience.com}{jonwick@wickbioscience.com}}}%
+		\kern 5.0 pt%
+		\AND%
+		\kern 5.0 pt%
+		\faEnvelopeOpenText \
+		\mbox{\href{mailto:wickj2@wwu.edu}{wickj2@wwu.edu}}%
+		\kern 5.0 pt%
+		\AND%
+		\kern 5.0 pt%
+		\faGlobe \
+		\mbox{\hrefWithoutArrow{https://wickbioscience.com}{wickbioscience.com}}}
+	\centerline{
+		\faGithub \
+		\mbox{\hrefWithoutArrow{https://github.com/Jon-S-Wick}{github.com/Jon-S-Wick}} \
+		% \AND%
 
-        }
-    \end{header}
 
-    % \vspace{5 pt - 0.3 cm}
+		\kern 5.0 pt%
+		\AND%
+		\kern 5.0 pt%
+		% \kern 5.0 pt%
+		% \AND%
+		% \kern 5.0 pt%
+		\faLinkedin \
+		\mbox{\hrefWithoutArrow{https://www.linkedin.com/in/jonathan-wick-75aa52277/}{linkedin.com/in/jonathan-wick-75aa52277}}%
+		\kern 5.0 pt%
+		\AND%
+		\kern 5.0 pt%
+		\faOrcid  \
+		\mbox{\hrefWithoutArrow{https://orcid.org/0009-0006-6282-2458}{Orcid ID:0009-0006-6282-2458}}%
 
+	}
+\end{header}
 
-    \section{Summary}
+% \vspace{5 pt - 0.3 cm}
 
 
+\section{Summary}
 
 
-        \begin{onecolentry}
-\hspace{1cm} I am an undergraduate researcher at Western Washington University (WWU) interested in combining my understanding of biology and computer science to advance the body of
-           knowledge of biological phenomena.
-          Currently, I am a member of the Lee lab at WWU
-          using computational biology to investigate the role of small RNAs in maintaining genome integrity within the model organism \textit{Tetrahymena thermophila}. 
-         Once I graduate, I plan on continuing a career in molecular biology research. 
-I am particularly interested in translational research investigating the causes and potential treatments of cancer and neurodegenerative diseases. 
-        \end{onecolentry}
 
 
+\begin{onecolentry}
+	\hspace{1cm}  Researcher at Western Washington University combining biology and computer science to investigate biological phenomena. Using computational biology in the Lee lab to study small RNAs and genome integrity in \textit{Tetrahymena thermophila}. Seeking a career in translational molecular biology research at the intersection of cancer, immunology, and neurodegenerative disease.
+\end{onecolentry}
 
 
 
 
-    \section{Education}
 
 
+\section{Education}
 
 
-        \begin{twocolentry}{
-            September 2023-June 2026}
-          \textbf{B.S. Molecular and Cellular Biology}, Computer Science minor 
-        \end{twocolentry}
-            Western Washington University -- Bellingham, WA 
 
 
-        % \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-            \item \textbf{GPA}: 3.53/4.0 %(\href{https://example.com}{a link to somewhere})
-\item \textbf{Relevant Upper Division Coursework:} Advanced Cell and Molec Lab, Immunobiology, Biochemistry (1 and 2) Genomic Data Analysis,
-Cellular and Molecular Biology, Microbiology, Biostatistics, Cell and Molec Lab,
-Genetics, Organic Chemistry series, Evolution, Numerical Analysis, Formal Language Programming, Database Systems.
-
-            \end{highlights}
-        \end{onecolentry}
-        \begin{twocolentry}{
-            September 2021-June 2023
-        }
-            \textbf{Tacoma Community College} -- Concurrent Enrollment
+\begin{twocolentry}{
+		September 2023-June 2026}
+	\textbf{B.S. Molecular and Cellular Biology}, Computer Science minor
+\end{twocolentry}
+Western Washington University -- Bellingham, WA
 
-        \end{twocolentry}
-        %    Science and Math Instutute -- High School
-        %
-        % \end{twocolentry}
 
+% \vspace{0.10 cm}
+\begin{onecolentry}
+	\begin{highlights}
+		\item \textbf{GPA}: 3.5/4.0 %(\href{https://example.com}{a link to somewhere})
+		\item \textbf{Honors:} Outstanding Graduate, WWU Dept of Biology, 2026
+		\item \textbf{Relevant Upper Division Coursework:} Advanced Cell and Molec Lab, Immunobiology, Biochemistry (1 and 2) Genomic Data Analysis,
+		Cellular and Molecular Biology, Microbiology, Biostatistics, Cell and Molec Lab,
+		Genetics, Organic Chemistry series, Evolution, Numerical Analysis, Formal Language Programming, Database Systems.
 
+	\end{highlights}
+\end{onecolentry}
+\begin{twocolentry}{
+		September 2021-June 2023
+	}
+	\textbf{Tacoma Community College} -- Concurrent Enrollment
 
+\end{twocolentry}
+%    Science and Math Instutute -- High School
+%
+% \end{twocolentry}
 
-    \section{Research Experience}
 
 
 
+\section{Research Experience}
 
-        \begin{twocolentry}{
-            June 2024 - present
-        }
-            \textbf{Undergraduate Researcher}, Lee Lab, WWU -- Bellingham, WA\end{twocolentry}
 
-        % \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-            \item Investigate roles of sRNAs in an RNAi pathway responsible for maintaining genome integrity in \textit{Tetrahymena thermophila} using computational biology and genomic sequence analysis.
-            \item Developed new pipelines for sRNA biogensis loci identification and analysis.
-            \item Develop new tools and apply existing tools using R, Python, Bash, C, and C++.
-            \item Prepared presentations for round tables, lab meetings, and journal clubs.
-            \item Participated full-time in the WWU Biology Summer GlobeUndergraduate Research Program (SURP).
-            \item Performed Western Blots, maintained \textit{Tetrahymena} cells, and performed literature reviews to progress the goals of the lab.
-            \end{highlights}
-        \end{onecolentry}
 
 
-        \vspace{0.2 cm}
+\begin{twocolentry}{
+		June 2024 - present
+	}
+	\textbf{Undergraduate Researcher}, Lee Lab, WWU -- Bellingham, WA\end{twocolentry}
 
-        \begin{twocolentry}{
-            February 2023 - May 2024
-        }
-            \textbf{Computing Education Research}, Sushil K. Oswal, UW -- Tacoma, WA\end{twocolentry}
+% \vspace{0.10 cm}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Investigate roles of sRNAs in an RNAi pathway responsible for maintaining genome integrity in \textit{Tetrahymena thermophila} using computational biology and genomic sequence analysis.
+		\item Developed new pipelines for sRNA biogensis loci identification and analysis.
+		\item Develop new tools and apply existing tools using R, Python, Bash, C, and C++.
+		\item Prepared presentations for round tables, lab meetings, and journal clubs.
+		\item Participated full-time in the WWU Biology Summer Undergraduate Research Program (SURP).
+		\item Performed Western Blots, maintained \textit{Tetrahymena} cells, and performed literature reviews to progress the goals of the lab.
+	\end{highlights}
+\end{onecolentry}
 
-        \begin{onecolentry}
-            \begin{highlights}
-            \item Wrote and published a paper for the \textit{ACM Special Interest Group Computer Science Education} conference about education and mentorship structure in an extracurricular robotics team.
-              \item Performed a qualitative analysis on interviews and survey responses to extract useful data.
-              \item Formulated research questions for interviews and surveys.
-            \end{highlights}
-        \end{onecolentry}
-        \vspace{0.2 cm}
-        \begin{twocolentry}{ 
-            May 2022 - December 2022
 
-          }
-        \textbf{Biotech Research Intern}, Rain Incubator -- Tacoma, WA\end{twocolentry}
-        \begin{onecolentry}
-          \begin{highlights}
-          \item Collaborated with researchers to define novel methods for tracking European Green Crab migration in Puget Sound.
-          \item Learned the research process of defining a hypothesis, performed literature review, and planned experiments.
-          \item Performed pilot experiments using PCR to define future directions.
-
-          \end{highlights}
-        \end{onecolentry}
-
-
-
-    \begin{samepage}
-
-    \section{Research-based Coursework}
+\vspace{0.2 cm}
 
-    \begin{twocolentry}
-      {Spring 2025}
-      \textbf{Advanced Molecullar and cell w/lab} -- BIOL 487, WWU
-    \end{twocolentry}
-      \begin{onecolentry}
-        \begin{highlights}
-        \item Investigated the role of \textit{ubc-6}, an E2 ubiquitin ligase, in maintaining endoplasmic reticulum (ER) homeostasis in \textit{C. elegans}, in collaboration with other students.
-        \item Wrote an unpublished micropublication on research results and presented a poster at Northwest Worm Meeting in collaboration with fellow students.
-        \item Performed Western Blots, Reverse Transcriptase PCR, and PCR to analyze the accumulation of misfolded proteins in \textit{ubc-6} knockouts.
-        \item Reviewed literature and built molecular models.
-        \item Maintained electronic lab notebook using Benchling.
-        \end{highlights}
-      \end{onecolentry}
+\begin{twocolentry}{
+		February 2023 - May 2024
+	}
+	\textbf{Computing Education Research}, Sushil K. Oswal, UW -- Tacoma, WA\end{twocolentry}
 
-    \begin{twocolentry}
-      {Winter 2025}
-       \textbf{Genomic Data Analysis} -- BIOL 477, WWU
-    \end{twocolentry}
-      \begin{onecolentry}
-        \begin{highlights}
-        \item Collaborated with another student in analyzing mRNA differential expression in \textit{Tetrahymena thermophila}.
-        \item Used Bash and python over secure shell (SSH) for evaluating genomic features.
-        \item Wrote a course paper and presented independent analysis of mRNA differential expression.
-        \item Presented relevant research articles to the class to facilitate discussion.
-        \end{highlights}
-      \end{onecolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Wrote and published a paper for the \textit{ACM Special Interest Group Computer Science Education} conference about education and mentorship structure in an extracurricular robotics team.
+		\item Performed a qualitative analysis on interviews and survey responses to extract useful data.
+		\item Formulated research questions for interviews and surveys.
+	\end{highlights}
+\end{onecolentry}
+\vspace{0.2 cm}
+\begin{twocolentry}{
+		May 2022 - December 2022
 
-   \begin{samepage}
-      \section{Publications}
+	}
+	\textbf{Biotech Research Intern}, Rain Incubator -- Tacoma, WA\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Collaborated with researchers to define novel methods for tracking European Green Crab migration in Puget Sound.
+		\item Learned the research process of defining a hypothesis, performed literature review, and planned experiments.
+		\item Performed pilot experiments using PCR to define future directions.
 
+	\end{highlights}
+\end{onecolentry}
 
 
 
-         \begin{twocolentry}{
-             March 2024
-         }
-             \textbf{Understanding the Leadership Structure and Mentoring Model of an Extracurricular Robotics Team: Key Findings from a Case Study}
-         \end{twocolentry}
+\begin{samepage}
 
-         \vspace{0.10 cm}
+	\section{Research-based Coursework}
 
-         \begin{onecolentry}
-             \textit{SIGCSE 2024: Proceedings of the 55th ACM Technical Symposium on Computer Science Education V. 2}
-           \mbox{Hitender Oswal}, \underline{\textbf{\textit{Jon Wick}}}, \mbox{Seth Tandon}, \mbox{Ashley Brewster}, \mbox{Sushil K Oswal}
+	\begin{twocolentry}
+		{Spring 2025}
+		\textbf{Advanced Molecular and cell w/lab} -- BIOL 487, WWU
+	\end{twocolentry}
+	\begin{onecolentry}
+		\begin{highlights}
+			\item Investigated the role of \textit{ubc-6}, an E2 ubiquitin ligase, in maintaining endoplasmic reticulum (ER) homeostasis in \textit{C. elegans}, in collaboration with other students.
+			\item Wrote an unpublished micropublication on research results and presented a poster at Northwest Worm Meeting in collaboration with fellow students.
+			\item Performed Western Blots, Reverse Transcriptase PCR, and PCR to analyze the accumulation of misfolded proteins in \textit{ubc-6} knockouts.
+			\item Reviewed literature and built molecular models.
+			\item Maintained electronic lab notebook using Benchling.
+		\end{highlights}
+	\end{onecolentry}
 
-             \vspace{0.10 cm}
+	\begin{twocolentry}
+		{Winter 2025}
+		\textbf{Genomic Data Analysis} -- BIOL 477, WWU
+	\end{twocolentry}
+	\begin{onecolentry}
+		\begin{highlights}
+			\item Collaborated with another student in analyzing mRNA differential expression in \textit{Tetrahymena thermophila}.
+			\item Used Bash and python over secure shell (SSH) for evaluating genomic features.
+			\item Wrote a course paper and presented independent analysis of mRNA differential expression.
+			\item Presented relevant research articles to the class to facilitate discussion.
+		\end{highlights}
+	\end{onecolentry}
 
-         % \href{https://doi.org/10.1145/3626253.3635603}{DOI: 10.1145/3626253.3635603}
-        \mbox{\hrefWithoutArrow{https://dl.acm.org/doi/10.1145/3626253.3635603}{DOI: 10.1145/3626253.3635603}}%
-     \end{onecolentry}
-    \end{samepage}
+	\begin{samepage}
+		\section{Publications}
 
-    \section{Additional Experience}
 
-       
-      \begin{twocolentry}
-        {August 2025 - present}
-        \textbf {Club Lead}, Molecular Bioscience Club, WWU -- Bellingham, WA
-      \end{twocolentry}
-        \begin{highlights}
-        \item Organize events to build community and provide information about programs, research oportunites, and professional development to students of all course standings.
-        \item Assisted students in getting into research labs.
-        \item Collaborated with faculty within and outside of WWU on events.
 
-            \end{highlights}
 
-      \begin{twocolentry}
-        {September 2019 - June 2023}
-        \textbf {Programming Lead}, SOTAbots FIRST Team 2557 -- Tacoma, WA
+		\begin{twocolentry}{
+				March 2024
+			}
+			\textbf{Understanding the Leadership Structure and Mentoring Model of an Extracurricular Robotics Team: Key Findings from a Case Study}
+		\end{twocolentry}
 
+		\vspace{0.10 cm}
 
-      \end{twocolentry}
-      \begin{onecolentry}
-        \begin{highlights}
-      \item Developed Code used in the semi-finals of the 2022 World Championship of FIRST Robotics Competition and 2023 district championship.
-      \item Taught students to program in Java using industry-standard design patterns.
-      \item Coordinated with other leads on the team to develop a robot, build community, perform local outreach, and obtain funding.
+		\begin{onecolentry}
+			\textit{SIGCSE 2024: Proceedings of the 55th ACM Technical Symposium on Computer Science Education V. 2}
+			\mbox{Hitender Oswal}, \underline{\textbf{\textit{Jon Wick}}}, \mbox{Seth Tandon}, \mbox{Ashley Brewster}, \mbox{Sushil K Oswal}
 
-        \end{highlights}
-      \end{onecolentry}
+			\vspace{0.10 cm}
 
-        % \begin{twocolentry}{
-        %     September 2023 - June 2024
-        % }
-        %     \textbf{Housing Ambassador}, WWU -- Bellingham, WA\end{twocolentry}
-        %
-        % \vspace{0.10 cm}
-        % \begin{onecolentry}
-        %     \begin{highlights}
-        %     \item Worked with coworkers to create a welcoming environment for visiting students to WWU.
-        %     \item 
-        %     \end{highlights}
-        % \end{onecolentry}
-    \end{samepage}
-   \end{samepage}
+			% \href{https://doi.org/10.1145/3626253.3635603}{DOI: 10.1145/3626253.3635603}
+			\mbox{\hrefWithoutArrow{https://dl.acm.org/doi/10.1145/3626253.3635603}{DOI: 10.1145/3626253.3635603}}%
+		\end{onecolentry}
+	\end{samepage}
 
+	\section{Additional Experience}
 
-    \begin{samepage}
 
-    \section{Posters}
+	\begin{twocolentry}
+		{August 2025 - June 2026}
+		\textbf {Club Lead}, Molecular Bioscience Club, WWU -- Bellingham, WA
+	\end{twocolentry}
+	\begin{highlights}
+		\item Organize events to build community and provide information about programs, research opportunities, and professional development to students of all course standings.
+		\item Assisted students in getting into research labs.
+		\item Collaborated with faculty within and outside of WWU on events.
 
+	\end{highlights}
 
+	\begin{twocolentry}
+		{September 2019 - June 2023}
+		\textbf {Programming Lead}, SOTAbots FIRST Team 2557 -- Tacoma, WA
 
 
+	\end{twocolentry}
+	\begin{onecolentry}
+		\begin{highlights}
+			\item Developed Code used in the semi-finals of the 2022 World Championship of FIRST Robotics Competition and 2023 district championship.
+			\item Taught students to program in Java using industry-standard design patterns.
+			\item Coordinated with other leads on the team to develop a robot, build community, perform local outreach, and obtain funding.
 
-        \begin{onecolentry}
-            \textbf{Re-identification of the genomic origins of small RNAs in the model organism \textit{Tetrahymena thermophila} and characterization of those dependent on genome protective \textit{RDN2}} \newline
-          \textit{2025 SURP poster session}, October 2025.\newline
-            \underline{\textbf{Jon Wick}}, Noah Haight, Hannah Thorp, Dan Pollard, and Suzanne R. Lee
-         
-           \vspace{0.2cm}
+		\end{highlights}
+	\end{onecolentry}
 
-           \textbf{The Role of E2 Ligases ubc-6 and 7 in ERAD in C. elegans} \newline
-          \textit{Northwest Worm Meeting}, June 2025.\newline
-            Summer Simpson, Abby Mellin, Dylan Wilding, Natalie Patch, \underline{\textbf{Jon Wick}}, Bree Nelson, Hannah Thorp, Caelin Sickler, and Lina Dahlberg
-         
-           \vspace{0.2cm}
+\end{samepage}
+\end{samepage}
 
-          \textbf{Remapping previously sequenced 23-24 nucleotide sRNAs to the 2020 Tetrahymena thermophila Genome}\newline
-          \textit{WWU SURP poster session}, September 2024. \newline
-          \underline{\textbf{Jon Wick}}, Noah Haight, Suzanne R. Lee, Dan Pollard
 
-          \vspace{0.2cm}
+\begin{samepage}
 
-          \textbf{Leadership Structure and Mentoring Model of an Extracurricular Robotics Team} \newline
-          \textit{ACM Special Interest Group Computer Science Education conference}, March 2024.\newline
-          Hitender Oswal, \underline{\textbf{Jon Wick}}, Seth Tandon, Ashley Brewster, Sushil K. Oswal
+\section{Posters}
 
 
 
-        \end{onecolentry}
 
-    \section{Awards}
-    \begin{twocolentry}
-      {2026}
-      \textbf{Outstanding Graduate} \newline
-      Western Washington University, Dept of Biology
-    \end{twocolentry}
-    \begin{twocolentry}
-      {2025}
-      \textbf{Declan Barron Memorial Scholarship} \newline
-      Western Washington University, Dept of Biology
-    \end{twocolentry}
-    \begin{twocolentry}
-      {2025}
-      \textbf{WWU Biology Summer Undergraduate Research Program award} \newline
-      Western Washington University, Dept of Biology
-    \end{twocolentry}
+
+\begin{onecolentry}
+	\textbf{Re-identification of the genomic origins of small RNAs in the model organism \textit{Tetrahymena thermophila} and characterization of those dependent on genome protective \textit{RDN2}} \newline
+	\textit{2025 SURP poster session}, October 2025.\newline
+	\underline{\textbf{Jon Wick}}, Noah Haight, Hannah Thorp, Dan Pollard, and Suzanne R. Lee
+
+	\vspace{0.2cm}
+
+	\textbf{The Role of E2 Ligases ubc-6 and 7 in ERAD in C. elegans} \newline
+	\textit{Northwest Worm Meeting}, June 2025.\newline
+	Summer Simpson, Abby Mellin, Dylan Wilding, Natalie Patch, \underline{\textbf{Jon Wick}}, Bree Nelson, Hannah Thorp, Caelin Sickler, and Lina Dahlberg
+
+	\vspace{0.2cm}
+
+	\textbf{Remapping previously sequenced 23-24 nucleotide sRNAs to the 2020 Tetrahymena thermophila Genome}\newline
+	\textit{WWU SURP poster session}, September 2024. \newline
+	\underline{\textbf{Jon Wick}}, Noah Haight, Suzanne R. Lee, Dan Pollard
+
+	\vspace{0.2cm}
+
+	\textbf{Leadership Structure and Mentoring Model of an Extracurricular Robotics Team} \newline
+	\textit{ACM Special Interest Group Computer Science Education conference}, March 2024.\newline
+	Hitender Oswal, \underline{\textbf{Jon Wick}}, Seth Tandon, Ashley Brewster, Sushil K. Oswal
+
+
+
+\end{onecolentry}
+
+\section{Awards}
+\begin{twocolentry}
+	{2025}
+	\textbf{Declan Barron Memorial Scholarship} \newline
+	Western Washington University, Dept of Biology
+\end{twocolentry}
+\begin{twocolentry}
+	{2025}
+	\textbf{WWU Biology Summer Undergraduate Research Program award} \newline
+	Western Washington University, Dept of Biology
+\end{twocolentry}
 
 
 \section{Skills and Technologies}
 
 
 
-        \begin{onecolentry}
-            {\textbf{Biology Skills:}} Genomic Data Analysis, Cell maintenance, cell culture, Western Blot, PCR, Reverse Transcriptase PCR
-        \end{onecolentry}
-        \vspace{0.2 cm}
-        \begin{onecolentry}
-            \textbf{Programming Languages:} Python, Java, Nix, R, C++, C, JavaScript, SQL
-        \end{onecolentry}
+\begin{onecolentry}
+	{\textbf{Biology Skills:}} Genomic Data Analysis, Cell maintenance, cell culture, Western Blot, PCR, Reverse Transcriptase PCR, Data visualization, DESeq2, bedtools, samtools
+\end{onecolentry}
+\vspace{0.2 cm}
+\begin{onecolentry}
+	\textbf{Programming Languages:} Python, Java, Nix, R, C++, C, JavaScript, SQL
+\end{onecolentry}
 
-        \vspace{0.2 cm}
+\vspace{0.2 cm}
 
-        \begin{onecolentry}
-            \textbf{Software:} Command Line Interface, Benchling, Microsoft Office/Libre Office, Jupyter Notebook, 
-                    Linux, NixOS, ImageJ, React, bun, Secure Shell (SSH), NeoVim, Snapgene
-        \end{onecolentry}
-%     \section{References}
-% Available upon request.
-     
+\begin{onecolentry}
+	\textbf{Software:} Command Line Interface, Benchling, Microsoft Office/Libre Office, Jupyter Notebook,
+	Linux, NixOS, ImageJ, React, bun, Secure Shell (SSH), NeoVim, Snapgene, git, ggplot2, matplotlib
+\end{onecolentry}
+
 
 
 
