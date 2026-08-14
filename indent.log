@@ -1,12 +1,12 @@
 INFO:  latexindent.pl version 3.24.5, 2025-03-13, a script to indent .tex files
        latexindent.pl lives here: /nix/store/2laj3mfxsjqlbz6h9zvgd3i310yg626g-latexindent-3.24.5-tex/scripts/latexindent/
-       Thu Jun 18 12:51:13 2026
-       Filename: /home/jonwick/Documents/CV/Jon-WickCV.tex
+       Fri Jun 26 14:55:33 2026
+       Filename: /home/jonwick/Documents/JobSearch/CV/JonWickResume.tex
 INFO:  Processing switches:
        -s|--silent: Silent mode active (you have used either -s or --silent)
        -w|--overwrite: Overwrite mode active, will make a back up before overwriting
 INFO:  Directory for backup files and log file indent.log:
-       /home/jonwick/Documents/CV
+       /home/jonwick/Documents/JobSearch/CV
 INFO:  Perl modules are being loaded from the following directories:
        /nix/store/4pfrhja4j3j5g4iwssn9w43sgihdf4wl-perl-5.42.0/lib/perl5/5.42.0/FindBin.pm
        /nix/store/0i6pr1hrrh7p910xcgk5xba1chi1m0s9-perl-5.42.0-env/lib/perl5/site_perl/5.42.0/YAML/Tiny.pm
@@ -23,20 +23,92 @@ INFO:  YAML reading settings
        latexindent.pl didn't find indentconfig.yaml or .indentconfig.yaml
        see all possible locations: https://latexindentpl.readthedocs.io/en/latest/sec-appendices.html#indentconfig-options)
 INFO:  Backup procedure (-w flag active):
-       /home/jonwick/Documents/CV/Jon-WickCV.bak0 already exists, incrementing by 1 (see maxNumberOfBackUps)
-       /home/jonwick/Documents/CV/Jon-WickCV.bak1 already exists, incrementing by 1 (see maxNumberOfBackUps)
-       /home/jonwick/Documents/CV/Jon-WickCV.bak2 already exists, incrementing by 1 (see maxNumberOfBackUps)
-       /home/jonwick/Documents/CV/Jon-WickCV.bak3 already exists, incrementing by 1 (see maxNumberOfBackUps)
-       /home/jonwick/Documents/CV/Jon-WickCV.bak4 already exists, incrementing by 1 (see maxNumberOfBackUps)
-       /home/jonwick/Documents/CV/Jon-WickCV.bak5 already exists, incrementing by 1 (see maxNumberOfBackUps)
-       Backing up /home/jonwick/Documents/CV/Jon-WickCV.tex to /home/jonwick/Documents/CV/Jon-WickCV.bak6...
-       /home/jonwick/Documents/CV/Jon-WickCV.tex will be overwritten after indentation
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak0 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak1 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak2 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak3 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak4 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak5 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak6 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak7 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak8 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak9 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak10 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak11 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak12 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak13 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak14 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak15 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak16 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak17 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak18 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak19 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak20 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak21 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak22 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak23 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak24 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak25 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak26 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak27 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak28 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak29 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak30 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak31 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak32 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak33 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak34 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak35 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak36 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak37 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak38 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak39 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak40 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak41 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak42 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak43 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak44 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak45 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak46 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak47 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak48 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak49 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak50 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak51 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak52 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak53 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak54 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak55 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak56 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak57 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak58 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak59 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak60 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak61 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak62 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak63 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak64 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak65 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak66 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak67 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak68 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak69 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak70 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak71 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak72 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak73 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak74 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak75 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak76 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak77 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       Backing up /home/jonwick/Documents/JobSearch/CV/JonWickResume.tex to /home/jonwick/Documents/JobSearch/CV/JonWickResume.bak78...
+       /home/jonwick/Documents/JobSearch/CV/JonWickResume.tex will be overwritten after indentation
 INFO:  Phase 1: searching for objects
 INFO:  Phase 2: finding surrounding indentation
 INFO:  Phase 3: indenting objects
 INFO:  Phase 4: final indentation check
 INFO:  Output routine:
-       Overwriting file /home/jonwick/Documents/CV/Jon-WickCV.tex
+       Overwriting file /home/jonwick/Documents/JobSearch/CV/JonWickResume.tex
        --------------
 INFO:  Please direct all communication/issues to:
         https://github.com/cmhughes/latexindent.pl

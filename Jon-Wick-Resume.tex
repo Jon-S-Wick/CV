@@ -1,59 +1,51 @@
-% Packages:
-% \documentclass[11pt]{article}
-\documentclass[10pt, article]{article}
+% !TEX TS-program = Resumepdflatex
+\documentclass[10pt]{article}
 
-% Packages:
 \usepackage[
-  letter,
-    % ignoreheadfoot, % set margins without considering header and footer
+  letterpaper,
     includefoot,
     ignorehead,
-    top=0.5 cm, % seperation between body and page edge from the top
-    bottom=0.5 cm, % seperation between body and page edge from the bottom
-    left=2 cm, % seperation between body and page edge from the left
-    right=2 cm, % seperation between body and page edge from the right
-    footskip=2.5 cm, % seperation between body and footer
-    % showframe % for debugging
-]{geometry} % for adjusting page geometry
-\usepackage{titlesec} % for customizing section titles
-\usepackage{tabularx} % for making tables with fixed width columns
-\usepackage{array} % tabularx requires this
-\usepackage[dvipsnames]{xcolor} % for coloring text
-\definecolor{primaryColor}{RGB}{0, 0, 0} % define primary color
-\usepackage{enumitem} % for customizing lists
-\usepackage{fontawesome5} % for using icons
-\usepackage{amsmath} % for math
+    top=0.5 cm,
+    bottom=0.5 cm,
+    left=1.2 cm,
+    right=1.2 cm,
+    footskip=0.6 cm,
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 0, 0}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
 
 \usepackage[
-    pdftitle={Jon_Wick_CV},
+    pdftitle={Jon_Wick_Resume},
     pdfauthor={Jon Wick},
-    pdfcreator={LaTeX with RenderCV},
+    pdfcreator={LaTeX},
     colorlinks=false,
     urlcolor=primaryColor,
     hidelinks,
-]{hyperref} % for links, metadata and bookmarks
-\usepackage[pscoord]{eso-pic} % for floating text on the page
-\usepackage{calc} % for calculating lengths
-\usepackage{bookmark} % for bookmarks
-\usepackage{lastpage} % for getting the total number of pages
-\usepackage{changepage} % for one column entries (adjustwidth environment)
-\usepackage{paracol} % for two and three column entries
-\usepackage{ifthen} % for conditional statements
-\usepackage{needspace} % for avoiding page brake right after the section title
-\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
 
-\usepackage{blindtext}
 \usepackage{fancyhdr}
 \usepackage[mmddyyyy]{datetime}
-\fancyhf{} % clear existing header/footer entries
-\fancyfoot[r]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
-\fancyfoot[l]{Updated \today}
-\fancyfoot[c]{Jon Wick CV}
+\fancyhf{}
+\fancyfoot[L]{Updated \today}
+\fancyfoot[R]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
 \fancyhead{}
-\renewcommand{\headrulewidth}{0pt}  % remove header line
+\renewcommand{\headrulewidth}{0pt}
 
-
-% Ensure that generate pdf is machine readable/ATS parsable:
 \ifPDFTeX
     \input{glyphtounicode}
     \pdfgentounicode=1
@@ -64,64 +56,36 @@
 
 \usepackage{charter}
 
-% Some settings:
 \raggedright
-\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
-\pagestyle{fancy} % no header or footer
-\setcounter{secnumdepth}{0} % no section numbering
-\setlength{\parindent}{0pt} % no indentation
-\setlength{\topskip}{0pt} % no top skip
-\setlength{\columnsep}{0.15cm} % set column seperation
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{fancy}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0.1cm}
 \pagenumbering{arabic}
 
 \titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.06 cm}{0.08 cm}
 
-\titlespacing{\section}{
-    % left space:
-    -1pt
-}{
-    % top space:
-    0.1 cm
-}{
-    % bottom space:
-    0.1 cm
-} % section title spacing
-
-\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
 \newenvironment{highlights}{
     \begin{itemize}[
-        topsep=0.10 cm,
-        parsep=0.10 cm,
+        topsep=0.02 cm,
+        parsep=0.02 cm,
         partopsep=0pt,
         itemsep=0pt,
-        leftmargin=0 cm + 10pt
+        leftmargin=0 cm + 8pt
     ]
 }{
     \end{itemize}
-} % new environment for highlights
-
-
-\newenvironment{highlightsforbulletentries}{
-    \begin{itemize}[
-        topsep=0.10 cm,
-        parsep=0.10 cm,
-        partopsep=0pt,
-        itemsep=0pt,
-        leftmargin=10pt
-    ]
-}{
-    \end{itemize}
-} % new environment for highlights for bullet entries
+}
 
 \newenvironment{onecolentry}{
-    \begin{adjustwidth}{
-        0 cm + 0.00001 cm
-    }{
-        0 cm + 0.00001 cm
-    }
+    \begin{adjustwidth}{0 cm + 0.00001 cm}{0 cm + 0.00001 cm}
 }{
     \end{adjustwidth}
-} % new environment for one column entries
+}
 
 \newenvironment{twocolentry}[2][]{
     \onecolentry
@@ -132,263 +96,217 @@
     \switchcolumn \raggedleft \secondColumn
     \end{paracol}
     \endonecolentry
-} % new environment for two column entries
-
-\newenvironment{threecolentry}[3][]{
-    \onecolentry
-    \def\thirdColumn{#3}
-    \setcolumnwidth{, \fill, 4.5 cm}
-    \begin{paracol}{3}
-    {\raggedright #2} \switchcolumn
-}{
-    \switchcolumn \raggedleft \thirdColumn
-    \end{paracol}
-    \endonecolentry
-} % new environment for three column entries
+}
 
 \newenvironment{header}{
     \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
 }{
     \par\kern\topsep
-} % new environment for the header
+}
 
-\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
-  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
-    \put(
-        \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
-        \LenToUnit{\paperheight-1.0 cm}
-    ){\vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{Last updated in September 2024}\hspace{\widthof{Last updated in September 2024}}
-    }}}%
-  }%
-}%
-
-% save the original href command in a new command:
 \let\hrefWithoutArrow\href
 
-% new command for external links:
-
-
 \begin{document}
-    \newcommand{\AND}{\unskip
-        \cleaders\copy\ANDbox\hskip\wd\ANDbox
-        \ignorespaces
-    }
-    \newsavebox\ANDbox
-    \sbox\ANDbox{$|$}
+\newcommand{\AND}{\unskip
+	\cleaders\copy\ANDbox\hskip\wd\ANDbox
+	\ignorespaces
+}
+\newsavebox\ANDbox
+\sbox\ANDbox{$|$}
 
-    \begin{header}
-        \fontsize{25 pt}{25 pt}\selectfont Jon Wick
+\begin{header}
+	\fontsize{25 pt}{25 pt}\selectfont Jon Wick
+\end{header}
+\vspace{2 pt}
+\normalsize
+\centerline{
+	\faMapMarker* \
+	\mbox{Bellingham WA, 98225}%
+	\kern 4.0 pt%
+	\AND%
+	\kern 4.0 pt%
+	\faEnvelopeOpenText \
+	\mbox{\href{mailto:jonwick@wickbioscience.com}{jonwick@wickbioscience.com}}%
+	\kern 4.0 pt%
+	\AND%
+	\kern 4.0 pt%
+	\faEnvelopeOpenText \
+	\mbox{\href{mailto:wickj2@wwu.edu}{wickj2@wwu.edu}}%
+	\kern 4.0 pt%
+	\AND%
+	\kern 4.0 pt%
+	\faGlobe \
+	\mbox{\hrefWithoutArrow{https://wickbioscience.com}{wickbioscience.com}}}
+\centerline{
+	\faGithub \
+	\mbox{\hrefWithoutArrow{https://github.com/Jon-S-Wick}{github.com/Jon-S-Wick}}%
+	\kern 4.0 pt%
+	\AND%
+	\kern 4.0 pt%
+	\faLinkedin \
+	\mbox{\hrefWithoutArrow{https://www.linkedin.com/in/jonathan-wick-75aa52277/}{linkedin.com/in/jonathan-wick}}%
+	\kern 4.0 pt%
+	\AND%
+	\kern 4.0 pt%
+	\faOrcid  \
+	ORCID: 0009-0006-6282-2458%
+}
 
-        \vspace{5 pt}
+\section{Summary}
+\begin{onecolentry}
+	Molecular and computational biologist experienced in Western blots, PCR, sterile cell culture, and bioinformatic genomic analysis. Seeking a laboratory technician position applying these skills to immunology and cancer research.
+\end{onecolentry}
 
-        \normalsize
-        \centerline{
-        \faMapMarker* \
-        \mbox{Bellingham WA, 98225}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \faEnvelopeOpenText \
-\textul{\mbox{\href{mailto:jonwick@wickbioscience.com}{jonwick@wickbioscience.com}}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \faEnvelopeOpenText \
-        \mbox{\href{mailto:wickj2@wwu.edu}{wickj2@wwu.edu}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \faGlobe \
-\mbox{\hrefWithoutArrow{https://wickbioscience.com}{wickbioscience.com}}}
-        \centerline{
-        \faGithub \
-        \mbox{\hrefWithoutArrow{https://github.com/Jon-S-Wick}{github.com/Jon-S-Wick}} \
-        % \AND%
+\section{Education}
+\begin{twocolentry}{September 2023 -- June 2026}
+	\textbf{B.S. Molecular and Cellular Biology}, Computer Science minor
+\end{twocolentry}
+Western Washington University -- Bellingham, WA \\
+Outstanding Graduate, WWU Dept of Biology 2026 \\
+% \textbf{GPA:} 3.5/4.0 \\
+% \textit{Relevant coursework:} Immunobiology, Advanced Cell and Molec Lab, Biochemistry, Genomic Data Analysis, Cellular and Molecular Biology, Microbiology, Biostatistics, Genetics, Organic Chemistry
 
-        
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        % \kern 5.0 pt%
-        % \AND%
-        % \kern 5.0 pt%
-        \faLinkedin \
-        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/jonathan-wick-75aa52277/}{linkedin.com/in/jonathan-wick-75aa52277}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \faOrcid  \
-        \mbox{\hrefWithoutArrow{https://orcid.org/0009-0006-6282-2458}{Orcid ID:0009-0006-6282-2458}}%
+\section{Research Experience}
 
-        }
-    \end{header}
+\begin{twocolentry}{June 2024 -- Present}
+	\textbf{Undergraduate Researcher}, Lee Lab, WWU -- Bellingham, WA
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Investigate small non-coding RNA roles in an RNAi pathway maintaining genome integrity in \textit{Tetrahymena thermophila} using Western Blot, cell culture, and bioinformatics.
+		\item Develop custom pipelines in Python and R for genome-wide sRNA biogenesis loci identification and differential expression analysis.
+		\item Present findings at lab meetings, journal clubs, and WWU SURP poster sessions.
+	\end{highlights}
+\end{onecolentry}
 
-    % \vspace{5 pt - 0.3 cm}
+\vspace{0.08 cm}
 
+\begin{twocolentry}{Spring 2025}
+	\textbf{Advanced Molecular and Cell Lab} -- BIOL 487, WWU
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Investigated ER-associated protein degradation (ERAD) via \textit{ubc-6} in \textit{C. elegans}, relevant to protein quality control in cancer and neurodegeneration.
+		\item Performed Western Blots, RT-PCR, and endpoint PCR to quantify misfolded protein accumulation in \textit{ubc-6} knockout lines.
+		\item Co-authored a poster at the Northwest Worm Meeting and co-wrote a micropublication.
+	\end{highlights}
+\end{onecolentry}
 
-    \section{Summary}
+\vspace{0.08 cm}
 
+\begin{twocolentry}{Winter 2025}
+	\textbf{Genomic Data Analysis} -- BIOL 477, WWU
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Conducted mRNA differential expression analysis on \textit{T. thermophila} datasets using DESeq2 in a Unix environment with Bash, Python, and HPC resources.
+		\item Communicated findings through a written research paper and oral presentation.
+	\end{highlights}
+\end{onecolentry}
 
+\section{Additional Experience}
 
+\begin{twocolentry}{May 2022 -- December 2022}
+	\textbf{Biotech Research Intern}, Rain Incubator -- Tacoma, WA
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Designed and executed PCR-based experiments for tracking European Green Crab migration; gained experience in hypothesis development and experimental planning.
+	\end{highlights}
+\end{onecolentry}
 
-        \begin{onecolentry}
-          I am an undergraduate researcher and avid outdoorsman at Western Washington University. I am interested in building a community in the Bellingham area. 
-During my time as a researcher at WWU I gained time-management, perseverance, and communication skills.
-As Housing Ambassador and Molecular Bioscences club lead I interacted with a variety of students and 
-families, assisting them in making an informed decision about the university, major selection, research,
-and planning for their future. 
-        \end{onecolentry}
+\vspace{0.03 cm}
 
+\begin{twocolentry}{August 2025 -- June 2026}
+	\textbf{Club Lead}, Molecular Bioscience Club, WWU -- Bellingham, WA
+\end{twocolentry}
+\begin{highlights}
+	\item Organize events on science advocacy, research opportunities and professional development; assisted students in joining labs.
+\end{highlights}
 
+\vspace{0.03 cm}
 
+\begin{twocolentry}{February 2023 -- May 2024}
+	\textbf{Computing Education Research}, Sushil K. Oswal, UW -- Tacoma, WA
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Co-authored a paper at ACM SIGCSE on mentorship in STEM education; performed qualitative analysis on interviews and surveys.
+	\end{highlights}
+\end{onecolentry}
 
+\vspace{0.03 cm}
 
+\begin{twocolentry}{September 2019 -- June 2023}
+	\textbf{Programming Lead}, SOTAbots FIRST Team 2557 -- Tacoma, WA
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Developed competition code for the 2022 FIRST World Championship semi-finals and 2023 district championship; taught Java using industry-standard design patterns.
+	\end{highlights}
+\end{onecolentry}
 
-    \section{Education}
+\section{Skills and Technologies}
+\begin{onecolentry}
+	\setcolumnwidth{0.24\linewidth, 0.24\linewidth, 0.24\linewidth, 0.24\linewidth}
+	\begin{paracol}{4}
 
+		\textbf{Wet Lab}
+		\begin{itemize}[topsep=0pt, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=8pt]
+			\item Western Blot
+			\item PCR
+			\item Reverse Transcriptase PCR
+			\item Cell Culture
+			\item Aseptic Technique
+		\end{itemize}
 
+		\switchcolumn
 
+		\textbf{Bioinformatics}
+		\begin{itemize}[topsep=0pt, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=8pt]
+			\item Genomic Data Analysis
+			\item DESeq2
+			\item bedtools
+			\item samtools
+			\item Data Visualization (ggplot2, matplotlib)
+		\end{itemize}
 
-        \begin{twocolentry}{
-            September 2023-present}
-          \textbf{B.S. Molecular and Cellular Biology}, Computer Science minor 
-        \end{twocolentry}
-        \begin{twocolentry}{
-            Expected June 2026
-        }
-            Western Washington University -- Bellingham, WA 
+		\switchcolumn
 
-        \end{twocolentry}
+		\textbf{Programming Languages}
+		\begin{itemize}[topsep=0pt, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=8pt]
+			\item Python
+			\item R
+			\item Java
+			\item C/C++
+			\item SQL
+			\item Bash
+		\end{itemize}
 
-        % \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-            \item \textbf{GPA}: 3.53/4.0 %(\href{https://example.com}{a link to somewhere})
-            \end{highlights}
-        \end{onecolentry}
-        \begin{twocolentry}{
-            September 2021-June 2023
-        }
-            \textbf{Tacoma Community College} -- Concurrent Enrollment
+		\switchcolumn
 
-        \end{twocolentry}
-        %    Science and Math Instutute -- High School
-        %
-        % \end{twocolentry}
+		\textbf{Software}
+		\begin{itemize}[topsep=0pt, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=8pt]
+			\item Benchling
+			\item CLI/Git/SSH
+			\item ImageJ
+			\item Jupyter
+			\item Microsoft Office
+			\item SnapGene
+			% \item SSH
+		\end{itemize}
 
+	\end{paracol}
+\end{onecolentry}
 
-% \begin{body}
-%
-% 	\vspace{14pt}
-% \begin{FlushLeft}
-% \addtolength{\tabcolsep}{-4pt}  % adjust the spacing
-%         \section{Skills}
-% \begin{tabular}{@{\hskip 0pt}r l@{\hskip 22pt}r@{\hskip 0pt}l@{\hskip 22pt}r@{\hskip 0pt}l@{\hskip 22pt}r@{\hskip 0pt}l@{\hskip 22pt}r@{\hskip 0pt}l} 
-%
-%   Communication  & Team building &
-%           Python & C & assembly \\ bash
-%           Western blot \\ PCR
-%
-% \end{tabular}
-% \addtolength{\tabcolsep}{4pt}
-% \end{FlushLeft}
-% \end{body}
+\section{Publications and Awards}
+\vspace{0.05 cm}
+\begin{onecolentry}
+	% \small
+	\textbf{\textit{Publication:}} Understanding the Leadership Structure and Mentoring Model of an Extracurricular Robotics Team, \textit{SIGCSE 2024}. DOI: \hrefWithoutArrow{https://dl.acm.org/doi/10.1145/3626253.3635603}{10.1145/3626253.3635603} \\
+	\textbf{\textit{Posters:}} Re-identification of genomic origins of sRNAs in \textit{T. thermophila} (WWU SURP 2025); The Role of E2 Ligases ubc-6 and 7 in ERAD in \textit{C. elegans} (NW Worm Meeting 2025); Remapping sRNAs to the 2020 \textit{T. thermophila} Genome (WWU SURP 2024)	\\
+\textbf{\textit{Awards:}} Declan Barron Memorial Scholarship (2025); WWU Biology SURP Award (2025)
 
-% \hrulefill
+\end{onecolentry}
 
-    \section{Experience}
-
-
-
-
-
-        \begin{twocolentry}{
-            June 2024 - present
-        }
-            \textbf{Undergraduate Researcher}, Lee Lab, WWU -- Bellingham, WA\end{twocolentry}
-
-        % \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-            \item Investigate roles of sRNAs in an RNAi pathway responsible for maintaining genome integrity in \textit{Tetrahymena thermophila} using computational biology and genomic sequence analysis.
-            \item Develop new tools and apply existing tools using R, Python, Bash, C, and C++.
-            \item Prepared presentations for round tables, lab meetings, and journal clubs.
-            \item Participated full-time in the WWU Biology Summer Undergraduate Research Program (SURP).
-            \item Performed Western Blots, maintained \textit{Tetrahymena} cells, and performed literature reviews to progress the goals of the lab.
-            \end{highlights}
-        \end{onecolentry}
-
-
-        \vspace{0.2 cm}
-      \begin{twocolentry}
-        {August 2025 - present}
-        \textbf {Club Lead}, Molecular Bioscience Club, WWU -- Bellingham, WA
-      \end{twocolentry}
-        \begin{highlights}
-        \item Organize events to build community and provide information about programs, research oportunites, and professional development to students of all course standings.
-        \item Assisted students in getting into research labs.
-        \item Collaborated with faculty within and outside of WWU on events.
-
-            \end{highlights}
-
-
-      \begin{twocolentry}
-        {September 2023 - June 2024}
-        \textbf {Housing Ambassador}, WWU -- Bellingham, WA
-      \end{twocolentry}
-        \begin{highlights}
-        \item Developed an inclusive environment for students to learn about housing at WWU.
-        \item Collaborated with fellow ambassador's 
-        \item Collaborated with faculty within and outside of WWU on events.
-
-            \end{highlights}
-
-        \begin{twocolentry}{
-            February 2023 - May 2024
-        }
-            \textbf{Computing Education Research}, Sushil K. Oswal, UW -- Tacoma, WA\end{twocolentry}
-
-        \begin{onecolentry}
-            \begin{highlights}
-            \item Wrote and published a paper for the \textit{ACM Special Interest Group Computer Science Education} conference about education and mentorship structure in an extracurricular robotics team.
-              \item Performed a qualitative analysis on interviews and survey responses to extract useful data.
-              \item Formulated research questions for interviews and surveys.
-            \end{highlights}
-        \end{onecolentry}
-        \vspace{0.2 cm}
-        \begin{twocolentry}{ 
-            May 2022 - December 2022
-
-          }
-        \textbf{Biotech Research Intern}, Rain Incubator -- Tacoma, WA\end{twocolentry}
-        \begin{onecolentry}
-          \begin{highlights}
-          \item Collaborated with researchers to define novel methods for tracking European Green Crab migration in Puget Sound.
-          \item Learned the research process of defining a hypothesis, performed literature review, and planned experiments.
-          \item Performed pilot experiments using PCR to define future directions.
-
-          \end{highlights}
-        \end{onecolentry}
-
-      \begin{twocolentry}
-        {September 2019 - June 2023}
-        \textbf {Programming Lead}, SOTAbots FIRST Team 2557 -- Tacoma, WA
-
-
-      \end{twocolentry}
-      \begin{onecolentry}
-        \begin{highlights}
-      \item Developed Code used in the semi-finals of the 2022 World Championship of FIRST Robotics Competition and 2023 district championship.
-      \item Taught students to program in Java using industry-standard design patterns.
-      \item Coordinated with other leads on the team to develop a robot, build community, perform local outreach, and obtain funding.
-
-        \end{highlights}
-      \end{onecolentry}
-
-
-    \begin{samepage}
-
-
-   \begin{samepage}
 \end{document}

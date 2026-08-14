@@ -1,0 +1,28 @@
+Jon Wick
+Molecular and Computational Biologist
+wickj2@wwu.edu | jonwick@wickbioscience.com
+
+June 21, 2026
+
+Benaroya Research Institute
+Bettelli Lab
+1201 9th Avenue
+Seattle, WA 98101
+
+Dear Dr. Bettelli,
+
+I am currently a senior at Western Washington University pursuing a Bachelor's in molecular and cellular biology and a minor in computer science. I am applying to the Research Technician I position in the Bettelli Lab at Benaroya Research Institute, where I am particularly motivated by the lab's focus on cellular and molecular mechanisms of immune regulation in multiple sclerosis.
+
+My Immunobiology coursework introduced me to the central questions in autoimmunity and T cell biology that guide your lab's research. I am eager to apply my wet lab and computational experience to studying CD4+ tissue-resident memory T cells and their roles in MS pathogenesis.
+
+During the past 2 years, I have been participating in research as a part of the Lee lab at WWU. The primary goal of the lab is to investigate how a novel RNAi pathway contributes to maintaining genome integrity in the model organism Tetrahymena thermophila. I independently developed computational pipelines to analyze sRNA biogenesis and mRNA differential expression, integrating existing bioinformatics tools with custom methods implemented in Python and R. Because this pathway diverges from canonical RNAi systems, I designed analysis strategies tailored to organism-specific biology rather than relying on standard workflows. Alongside this computational work, I maintained live cell cultures under sterile conditions and performed protein analysis via Western blotting to characterize RNAi pathway components.
+
+In a separate project, I investigated ER-associated protein degradation in C. elegans using RT-PCR and Western blotting to quantify misfolded protein accumulation in knockout lines, and co-authored a poster presented at the Northwest Worm Meeting. I also contributed to the development of an environmental DNA (eDNA) sentinel system using PCR-based approaches to monitor invasive species, with downstream applications in wastewater-based epidemiology. This work motivated my interest in scalable molecular detection approaches.
+
+My work integrates wet lab and computational approaches, and I am comfortable operating across both domains. This combination of independence and cross-disciplinary training has prepared me to contribute effectively in a research setting focused on understanding immune-mediated disease.
+
+Thank you for considering my application. I would be glad to discuss how my experience and passion for research can support the goals of the Bettelli Lab and Benaroya Research Institute.
+
+Sincerely,
+
+Jon Wick

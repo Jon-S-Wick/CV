@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/nixos.org) (preloaded format=pdflatex 1980.1.1)  31 MAY 2026 22:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/nixos.org) (preloaded format=pdflatex 1980.1.1)  24 JUN 2026 09:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -56,19 +56,6 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen155
 \Gm@layoutvoffset=\dimen156
 \Gm@dimlist=\toks18
-
-
-! Package keyval Error: letter undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1005 \ProcessOptionsKV[p]{Gm}
-                               %
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 )
 (/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/latex/
 titlesec/titlesec.sty
@@ -494,33 +481,6 @@ needspace/needspace.sty
 Package: needspace 2025/03/13 v1.3e reserve vertical space
 )
 (/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/latex/
-blindtext/blindtext.sty
-Package: blindtext 2012/01/06 V2.0 blindtext-Package
-
-(/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/latex/
-tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-)
-\c@blindtext=\count331
-\c@Blindtext=\count332
-\c@blind@countparstart=\count333
-\blind@countxx=\count334
-\blindtext@numBlindtext=\count335
-\blind@countyy=\count336
-\c@blindlist=\count337
-\c@blindlistlevel=\count338
-\c@blindlist@level=\count339
-\blind@listitem=\count340
-\c@blind@listcount=\count341
-\c@blind@levelcount=\count342
-\blind@mathformula=\count343
-\blind@Mathformula=\count344
-\c@blind@randomcount=\count345
-\c@blind@randommax=\count346
-\c@blind@pangramcount=\count347
-\c@blind@pangrammax=\count348
-)
-(/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/latex/
 fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
@@ -560,7 +520,7 @@ c/xkeyval/xkvutils.tex
 \XKV@toks=\toks30
 \XKV@tempa@toks=\toks31
 )
-\XKV@depth=\count349
+\XKV@depth=\count331
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/latex/
@@ -570,39 +530,39 @@ Package: fcprefix 2012/09/28
 (/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/latex/
 fmtcount/fcnumparser.sty
 Package: fcnumparser 2017/06/15
-\fc@digit@counter=\count350
+\fc@digit@counter=\count332
 ))
-\c@padzeroesN=\count351
-\fc@tmpcatcode=\count352
-\@DT@modctr=\count353
-\@ordinalctr=\count354
-\@orgargctr=\count355
-\@strctr=\count356
-\@tmpstrctr=\count357
-\@DT@loopN=\count358
-\@DT@X=\count359
+\c@padzeroesN=\count333
+\fc@tmpcatcode=\count334
+\@DT@modctr=\count335
+\@ordinalctr=\count336
+\@orgargctr=\count337
+\@strctr=\count338
+\@tmpstrctr=\count339
+\@DT@loopN=\count340
+\@DT@X=\count341
 )
 (/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/latex/
 datetime/datetime-defaults.sty
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count360
-\@month=\count361
-\@year=\count362
-\c@HOUR=\count363
-\c@HOURXII=\count364
-\c@MINUTE=\count365
-\c@TOHOUR=\count366
-\c@TOMINUTE=\count367
-\c@SECOND=\count368
-\currenthour=\count369
-\currentminute=\count370
-\currentsecond=\count371
+\@day=\count342
+\@month=\count343
+\@year=\count344
+\c@HOUR=\count345
+\c@HOURXII=\count346
+\c@MINUTE=\count347
+\c@TOHOUR=\count348
+\c@TOMINUTE=\count349
+\c@SECOND=\count350
+\currenthour=\count351
+\currentminute=\count352
+\currentsecond=\count353
 Package datetime Info: No datetime.cfg file found, using default settings on in
 put line 308.
-\@dtctr=\count372
-\dayofyear=\count373
-\dayofweek=\count374
+\@dtctr=\count354
+\dayofyear=\count355
+\dayofweek=\count356
 LaTeX Info: Redefining \today on input line 736.
 \dt@a=\toks32
 \dt@b=\toks33
@@ -659,63 +619,58 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 psnfss/charter.sty
 Package: charter 2020/03/25 PSNFSS-v9.3 (P.Dyballa) 
 )
-LaTeX Font Info:    Trying to load font information for T1+bch on input line 17
-2.
+LaTeX Font Info:    Trying to load font information for T1+bch on input line 10
+9.
 
 (/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/latex/
 psnfss/t1bch.fd
 File: t1bch.fd 2004/10/18 font definitions for T1/bch.
-)
-
-LaTeX Warning: Unused global option(s):
-    [article].
-
-(./Jon-Wick-Resume.aux)
+) (./Jon-Wick-Resume.aux)
 \openout1 = `Jon-Wick-Resume.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: <default>
+* paper: letterpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includefoot 
-* h-part:(L,W,R)=(56.9055pt, 500.484pt, 56.9055pt)
+* h-part:(L,W,R)=(34.14322pt, 546.00856pt, 34.14322pt)
 * v-part:(T,H,B)=(14.22636pt, 766.51726pt, 14.22636pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=500.484pt
-* \textheight=695.38538pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
+* \textwidth=546.00856pt
+* \textheight=749.44543pt
+* \oddsidemargin=-38.12677pt
+* \evensidemargin=-38.12677pt
 * \topmargin=-95.04362pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=0.0pt
-* \footskip=71.13188pt
+* \footskip=17.07182pt
 * \marginparwidth=65.0pt
 * \marginparsep=11.0pt
-* \columnsep=4.26773pt
+* \columnsep=2.84544pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
@@ -730,19 +685,19 @@ LaTeX Font Info:    ... okay on input line 172.
 (/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/contex
 t/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count375
+\scratchcounter=\count357
 \scratchdimen=\dimen192
 \scratchbox=\box65
-\nofMPsegments=\count376
-\nofMParguments=\count377
+\nofMPsegments=\count358
+\nofMParguments=\count359
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count378
+\MPscratchCnt=\count360
 \MPscratchDim=\dimen193
-\MPnumerator=\count379
-\makeMPintoPDFobject=\count380
+\MPnumerator=\count361
+\makeMPintoPDFobject=\count362
 \everyMPtoPDFconversion=\toks37
 )
-Package hyperref Info: Link coloring OFF on input line 172.
+Package hyperref Info: Link coloring OFF on input line 109.
 
 (/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/latex/
 fmtcount/fc-english.def
@@ -750,96 +705,71 @@ File: fc-english.def 2016/01/12
 )
 \ANDbox=\box66
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-78.
+15.
 
 (/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/latex/
 lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-78.
+15.
 
 (/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/latex/
 lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-178.
+115.
 
 (/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/latex/
 lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-178.
+115.
 
 (/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/latex/
 lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 178.
+(Font)              <10> on input line 115.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 178.
+(Font)              <7> on input line 115.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 178.
+(Font)              <5> on input line 115.
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 203.
+nput line 139.
 
 (/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/latex/
 fontawesome5/ufontawesomefree2.fd)
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 203.
+nput line 139.
 
 (/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/latex/
 fontawesome5/ufontawesomefree1.fd)
-! Undefined control sequence.
-<argument> ...0 pt\faEnvelopeOpenText \^^M\textul 
-                                                  {\mbox {\href {mailto:jonw...
-l.203 ...wickbioscience.com}{wickbioscience.com}}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
- input line 224.
+ input line 153.
 
 (/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/latex/
 fontawesome5/ufontawesomebrands0.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not 
 available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 224.
+n input line 153.
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands1 on
- input line 224.
+ input line 153.
 
 (/nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/tex/latex/
 fontawesome5/ufontawesomebrands1.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands1/solid/n' in size <10> not 
 available
 (Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead o
-n input line 224.
+n input line 153.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 267.
+(Font)              <9> on input line 176.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 267.
-
-
-! LaTeX Error: \begin{samepage} on input line 393 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.394 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+(Font)              <6> on input line 176.
 
 
 [1
@@ -861,35 +791,31 @@ enddocument/afterlastpage (AED): lastpage setting LastPage.
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
- )
-(\end occurred inside a group at level 2)
-
-### semi simple group (level 2) entered at line 393 (\begingroup)
-### semi simple group (level 1) entered at line 390 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 16997 strings out of 467890
- 296409 string characters out of 5411706
- 733311 words of memory out of 5000000
- 45289 multiletter control sequences out of 15000+600000
- 663583 words of font info for 72 fonts, out of 8000000 for 9000
+ 16806 strings out of 467890
+ 292430 string characters out of 5411706
+ 738710 words of memory out of 5000000
+ 45099 multiletter control sequences out of 15000+600000
+ 666979 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,1046b,505s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r7566
-9-env/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></nix/stor
-e/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/type1/public/f
-ontawesome5/FontAwesome5Free-Solid.pfb></nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62
-g7kh-texlive-2025-r75669-env/fonts/type1/bitstrea/charter/bchb8a.pfb></nix/stor
-e/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/type1/bitstrea
-/charter/bchr8a.pfb></nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r
-75669-env/fonts/type1/bitstrea/charter/bchri8a.pfb></nix/store/ay5d7jampvjzcqz7
-x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/type1/public/lm/lmsy10.pfb></nix
-/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/type1/pub
-lic/lm/lmsy9.pfb>
-Output written on Jon-Wick-Resume.pdf (1 page, 109695 bytes).
+ 75i,11n,79p,1007b,571s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/ty
+pe1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></nix/store/ay5d7jampvjz
+cqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/type1/public/fontawesome5/Fo
+ntAwesome5Free-Solid.pfb></nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2
+025-r75669-env/fonts/type1/bitstrea/charter/bchb8a.pfb></nix/store/ay5d7jampvjz
+cqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/type1/bitstrea/charter/bchbi
+8a.pfb></nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fon
+ts/type1/bitstrea/charter/bchr8a.pfb></nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7
+kh-texlive-2025-r75669-env/fonts/type1/bitstrea/charter/bchri8a.pfb></nix/store
+/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-env/fonts/type1/public/lm
+/lmsy10.pfb></nix/store/ay5d7jampvjzcqz7x8bc7dmr0i62g7kh-texlive-2025-r75669-en
+v/fonts/type1/public/lm/lmsy9.pfb>
+Output written on Jon-Wick-Resume.pdf (1 page, 122775 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 99 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

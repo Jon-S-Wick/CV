@@ -1,0 +1,313 @@
+% !TEX TS-program = pdflatex
+\documentclass[10pt]{article}
+
+\usepackage[
+  letterpaper,
+    includefoot,
+    ignorehead,
+    top=0.6 cm,
+    bottom=0.6 cm,
+    left=1.2 cm,
+    right=1.2 cm,
+    footskip=0.6 cm,
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 0, 0}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+
+\usepackage[
+    pdftitle={Jon_Wick_Resume},
+    pdfauthor={Jon Wick},
+    pdfcreator={LaTeX},
+    colorlinks=false,
+    urlcolor=primaryColor,
+    hidelinks,
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+
+\usepackage{fancyhdr}
+\usepackage[mmddyyyy]{datetime}
+\fancyhf{}
+\fancyfoot[L]{Updated \today}
+\fancyfoot[R]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage{charter}
+
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{fancy}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0.1cm}
+\pagenumbering{arabic}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.08 cm}{0.1 cm}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.04 cm,
+        parsep=0.04 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 8pt
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{0 cm + 0.00001 cm}{0 cm + 0.00001 cm}
+}{
+    \end{adjustwidth}
+}
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+}
+
+\let\hrefWithoutArrow\href
+
+\begin{document}
+\newcommand{\AND}{\unskip
+	\cleaders\copy\ANDbox\hskip\wd\ANDbox
+	\ignorespaces
+}
+\newsavebox\ANDbox
+\sbox\ANDbox{$|$}
+
+\begin{header}
+	\fontsize{25 pt}{25 pt}\selectfont Jon Wick
+\end{header}
+\vspace{2 pt}
+\normalsize
+\centerline{
+	\faMapMarker* \
+	\mbox{Bellingham WA, 98225}%
+	\kern 4.0 pt%
+	\AND%
+	\kern 4.0 pt%
+	\faEnvelopeOpenText \
+	\mbox{\href{mailto:jonwick@wickbioscience.com}{jonwick@wickbioscience.com}}%
+	\kern 4.0 pt%
+	\AND%
+	\kern 4.0 pt%
+	\faEnvelopeOpenText \
+	\mbox{\href{mailto:wickj2@wwu.edu}{wickj2@wwu.edu}}%
+	\kern 4.0 pt%
+	\AND%
+	\kern 4.0 pt%
+	\faGlobe \
+	\mbox{\hrefWithoutArrow{https://wickbioscience.com}{wickbioscience.com}}}
+\centerline{
+	\faGithub \
+	\mbox{\hrefWithoutArrow{https://github.com/Jon-S-Wick}{github.com/Jon-S-Wick}}%
+	\kern 4.0 pt%
+	\AND%
+	\kern 4.0 pt%
+	\faLinkedin \
+	\mbox{\hrefWithoutArrow{https://www.linkedin.com/in/jonathan-wick-75aa52277/}{linkedin.com/in/jonathan-wick}}%
+	\kern 4.0 pt%
+	\AND%
+	\kern 4.0 pt%
+	\faOrcid  \
+	ORCID: 0009-0006-6282-2458%
+}
+
+\section{Summary}
+\begin{onecolentry}
+	Molecular and computational biologist experienced in Western blots, PCR, sterile cell culture, and bioinformatic genomic analysis. Seeking a laboratory technician position applying these skills to immunology and cancer research.
+\end{onecolentry}
+
+\section{Education}
+\begin{twocolentry}{September 2023 -- June 2026}
+	\textbf{B.S. Molecular and Cellular Biology}, Computer Science minor
+\end{twocolentry}
+Western Washington University -- Bellingham, WA \\
+Outstanding Graduate, WWU Dept of Biology 2026 \\
+% \textbf{GPA:} 3.5/4.0 \\
+% \textit{Relevant coursework:} Immunobiology, Advanced Cell and Molec Lab, Biochemistry, Genomic Data Analysis, Cellular and Molecular Biology, Microbiology, Biostatistics, Genetics, Organic Chemistry
+
+\section{Research Experience}
+
+\begin{twocolentry}{June 2024 -- Present}
+	\textbf{Undergraduate Researcher}, Lee Lab, WWU -- Bellingham, WA
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Investigate small non-coding RNA roles in an RNAi pathway maintaining genome integrity in \textit{Tetrahymena thermophila} using Western Blot, cell culture, and bioinformatics.
+		\item Develop custom pipelines in Python and R for genome-wide sRNA biogenesis loci identification and differential expression analysis.
+		\item Present findings at lab meetings, journal clubs, and WWU SURP poster sessions.
+	\end{highlights}
+\end{onecolentry}
+
+\vspace{0.12 cm}
+
+\begin{twocolentry}{Spring 2025}
+	\textbf{Advanced Molecular and Cell Lab} -- BIOL 487, WWU
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Investigated ER-associated protein degradation (ERAD) via \textit{ubc-6} in \textit{C. elegans}, relevant to protein quality control in cancer and neurodegeneration.
+		\item Performed Western Blots, RT-PCR, and endpoint PCR to quantify misfolded protein accumulation in \textit{ubc-6} knockout lines.
+		\item Co-authored a poster at the Northwest Worm Meeting and co-wrote a micropublication.
+	\end{highlights}
+\end{onecolentry}
+
+\vspace{0.12 cm}
+
+\begin{twocolentry}{Winter 2025}
+	\textbf{Genomic Data Analysis} -- BIOL 477, WWU
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Conducted mRNA differential expression analysis on \textit{T. thermophila} datasets using DESeq2 in a Unix environment with Bash, Python, and HPC resources.
+		\item Communicated findings through a written research paper and oral presentation.
+	\end{highlights}
+\end{onecolentry}
+
+\vspace{0.12 cm}
+
+\begin{twocolentry}{May 2022 -- December 2022}
+	\textbf{Biotech Research Intern}, Rain Incubator -- Tacoma, WA
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Designed and executed PCR-based experiments for tracking European Green Crab migration; gained experience in hypothesis development and experimental planning.
+	\end{highlights}
+\end{onecolentry}
+
+\section{Additional Experience}
+
+\begin{twocolentry}{August 2025 -- June 2026}
+	\textbf{Club Lead}, Molecular Bioscience Club, WWU -- Bellingham, WA
+\end{twocolentry}
+\begin{highlights}
+	\item Organize events on science advocacy, research opportunities and professional development; assisted students in joining labs.
+\end{highlights}
+
+\vspace{0.05 cm}
+
+\begin{twocolentry}{February 2023 -- May 2024}
+	\textbf{Computing Education Research}, Sushil K. Oswal, UW -- Tacoma, WA
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Co-authored a paper at ACM SIGCSE on mentorship in STEM education; performed qualitative analysis on interviews and surveys.
+	\end{highlights}
+\end{onecolentry}
+
+\vspace{0.05 cm}
+
+\begin{twocolentry}{September 2019 -- June 2023}
+	\textbf{Programming Lead}, SOTAbots FIRST Team 2557 -- Tacoma, WA
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Developed competition code for the 2022 FIRST World Championship semi-finals and 2023 district championship; taught Java using industry-standard design patterns.
+	\end{highlights}
+\end{onecolentry}
+
+\section{Skills and Technologies}
+\vspace{0.02 cm}
+\begin{onecolentry}
+\setcolumnwidth{0.32\linewidth, 0.32\linewidth, 0.32\linewidth}
+\begin{paracol}{3}
+
+\textbf{Wet Lab}
+\begin{itemize}[topsep=0pt, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=10pt]
+\item Western Blot
+\item PCR
+\item Reverse Transcriptase PCR
+\item Cell Culture
+\item Aseptic Technique
+\end{itemize}
+\vspace{0.1cm}
+\textbf{Bioinformatics}
+\begin{itemize}[topsep=0pt, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=10pt]
+\item Genomic Data Analysis
+\item DESeq2
+\item bedtools
+\item samtools
+\item Data Visualization (ggplot2, matplotlib)
+\end{itemize}
+
+\switchcolumn
+
+\textbf{Programming}
+\begin{itemize}[topsep=0pt, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=10pt]
+\item Python
+\item R
+\item Java
+\item C++
+\item C
+\item SQL
+\item Bash
+\end{itemize}
+
+\switchcolumn
+
+\textbf{Software}
+\begin{itemize}[topsep=0pt, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=10pt]
+\item Benchling
+\item Git
+\item ImageJ
+\item Jupyter
+\item Linux
+\item Microsoft Office
+\item NeoVim
+\item SnapGene
+\item SSH
+\end{itemize}
+
+\end{paracol}
+\end{onecolentry}
+
+\section{Publications and Awards}
+\vspace{0.05 cm}
+\begin{onecolentry}
+	\small
+	% \textbf{\textit{Posters:}} Re-identification of genomic origins of sRNAs in \textit{T. thermophila} (SURP 2025); The Role of E2 Ligases ubc-6 and 7 in ERAD in \textit{C. elegans} (NW Worm Meeting 2025); Remapping sRNAs to the 2020 \textit{T. thermophila} Genome (SURP 2024); Leadership Structure of a Robotics Team (SIGCSE 2024). \\
+	\textbf{\textit{Publication:}} Understanding the Leadership Structure and Mentoring Model of an Extracurricular Robotics Team, \textit{SIGCSE 2024}. DOI: \hrefWithoutArrow{https://dl.acm.org/doi/10.1145/3626253.3635603}{10.1145/3626253.3635603} \\
+	\textbf{\textit{Awards:}} Declan Barron Memorial Scholarship (2025); WWU Biology SURP Award (2025)
+\end{onecolentry}
+
+\end{document}

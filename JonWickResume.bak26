@@ -1,0 +1,509 @@
+% Packages:
+% \documentclass[11pt]{article}
+\documentclass[10pt, article]{article}
+
+% Packages:
+\usepackage[
+  letter,
+    % ignoreheadfoot, % set margins without considering header and footer
+    includefoot,
+    ignorehead,
+    top=0.5 cm, % seperation between body and page edge from the top
+    bottom=0.5 cm, % seperation between body and page edge from the bottom
+    left=0.5 cm, % seperation between body and page edge from the left
+    right=0.5 cm, % seperation between body and page edge from the right
+    footskip=1.0 cm, % seperation between body and footer
+    % showframe % for debugging
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 0, 0} % define primary color
+\definecolor{sectionColor}{RGB}{95, 135, 100} % professional sage green for section headers
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+
+\usepackage[
+    pdftitle={Jon_Wick_Resume},
+    pdfauthor={Jon Wick},
+    pdfcreator={LaTeX with Render Resume},
+    colorlinks=false,
+    urlcolor=primaryColor,
+    hidelinks,
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+
+\usepackage{blindtext}
+\usepackage{fancyhdr}
+\usepackage[mmddyyyy]{datetime}
+\fancyhf{} % clear existing header/footer entries
+\fancyfoot[r]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\fancyfoot[l]{Updated \today}
+\fancyfoot[c]{Jon Wick Resume}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}  % remove header line
+
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+\fi
+
+\usepackage[default]{lato} 
+
+% Some settings:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{fancy} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column seperation
+\pagenumbering{arabic}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}
+
+\titlespacing{\section}{
+    % left space:
+    0pt
+}{
+    % top space:
+    0.1 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
+
+\newcommand{\secrule}{\ \raisebox{0.5ex}{\hrulefill}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0 cm + 0.00001 cm
+    }{
+        0 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for three column entries
+
+\newsavebox{\headerbox}
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep
+    \setlength{\fboxsep}{10pt}
+    \begin{lrbox}{\headerbox}
+    \begin{minipage}{\dimexpr\textwidth-2\fboxsep\relax}
+    \centering\linespread{1.5}\selectfont\color{white}
+}{
+    \end{minipage}
+    \end{lrbox}
+    \colorbox{sectionColor}{\usebox{\headerbox}}
+    \par\kern\topsep
+} % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Last updated in September 2024}\hspace{\widthof{Last updated in September 2024}}
+    }}}%
+  }%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+
+
+\begin{document}
+\newcommand{\AND}{\unskip
+	\cleaders\copy\ANDbox\hskip\wd\ANDbox
+	\ignorespaces
+}
+\newsavebox\ANDbox
+\sbox\ANDbox{$|$}
+
+\begin{header}
+	\fontsize{25 pt}{25 pt}\selectfont Jon Wick
+
+	\vspace{2 pt}
+
+	\normalsize
+	\centerline{
+		\faMapMarker* \
+		\mbox{Bellingham WA, 98225}%
+		\kern 5.0 pt%
+		\AND%
+		\kern 5.0 pt%
+		\faEnvelopeOpenText \
+		\textul{\mbox{\href{mailto:jonwick@wickbioscience.com}{jonwick@wickbioscience.com}}}%
+		\kern 5.0 pt%
+		\AND%
+		\kern 5.0 pt%
+		\faEnvelopeOpenText \
+		\mbox{\href{mailto:wickj2@wwu.edu}{wickj2@wwu.edu}}%
+		\kern 5.0 pt%
+		\AND%
+		\kern 5.0 pt%
+		\faGlobe \
+		\mbox{\hrefWithoutArrow{https://wickbioscience.com}{wickbioscience.com}}}
+	\centerline{
+		\faGithub \
+		\mbox{\hrefWithoutArrow{https://github.com/Jon-S-Wick}{github.com/Jon-S-Wick}} \
+		% \AND%
+
+
+		\kern 5.0 pt%
+		\AND%
+		\kern 5.0 pt%
+		% \kern 5.0 pt%
+		% \AND%
+		% \kern 5.0 pt%
+		\faLinkedin \
+		\mbox{\hrefWithoutArrow{https://www.linkedin.com/in/jonathan-wick-75aa52277/}{linkedin.com/in/jonathan-wick-75aa52277}}%
+		\kern 5.0 pt%
+		\AND%
+		\kern 5.0 pt%
+		\faOrcid  \
+		\mbox{\hrefWithoutArrow{https://orcid.org/0009-0006-6282-2458}{Orcid ID:0009-0006-6282-2458}}%
+
+	}
+\end{header}
+
+% \vspace{5 pt - 0.3 cm}
+
+
+\section{Summary\secrule}
+
+
+
+
+\begin{onecolentry}
+	% \hspace{1cm}  Researcher at Western Washington University combining biology and computer science to investigate biological phenomena. Using computational biology in the Lee lab to study small RNAs and genome integrity in \textit{Tetrahymena thermophila}. Seeking a career in translational molecular biology research at the intersection of cancer, immunology, and neurodegenerative disease.
+	\hspace{1cm} Molecular and computational biologist with experience in Western blots, PCR, and sterile cell culture, as well as genomic analysis. Experience in investigating RNA interference pathways in \textit{T. thermophila} and protein degradation pathways in \textit{C. elegans}. I am seeking a laboratory technician position to apply these molecular and computational skills to immunology and cancer research.
+\end{onecolentry}
+
+
+
+
+
+
+
+
+% \vspace{0.10 cm}
+%    Science and Math Instutute -- High School
+%
+% \end{twocolentry}
+
+
+
+\section{Skills and Technologies\secrule}
+\begin{centering}
+	\setcolumnwidth{0.24\linewidth, 0.24\linewidth, 0.24\linewidth, 0.24\linewidth}
+	\begin{paracol}{4}
+
+		{\centering
+		\textbf{Wet Lab}
+
+		\textbullet~Western Blot\\
+		\textbullet~PCR\\
+		\textbullet~Reverse Transcriptase PCR\\
+		\textbullet~Cell Culture\\
+		\textbullet~Aseptic Technique\par}
+
+		\switchcolumn
+
+		{\centering
+		\textbf{Bioinformatics}
+
+		\textbullet~Genomic Data Analysis\\
+		\textbullet~DESeq2\\
+		\textbullet~bedtools\\
+		\textbullet~samtools\\
+		\textbullet~Data Visualization (ggplot2, matplotlib)\par}
+
+		\switchcolumn
+
+		{\centering
+		\textbf{Programming Languages}
+
+		\textbullet~Python\\
+		\textbullet~R\\
+		\textbullet~Java\\
+		\textbullet~C/C++\\
+		\textbullet~SQL\\
+		\textbullet~Bash\par}
+
+		\switchcolumn
+
+		{\centering
+		\textbf{Software}
+
+		\textbullet~Benchling\\
+		\textbullet~CLI/Git/SSH\\
+		\textbullet~ImageJ\\
+		\textbullet~Jupyter\\
+		\textbullet~Microsoft Office\\
+		\textbullet~SnapGene\par}
+
+	\end{paracol}
+\end{centering}
+\section{Research Experience\secrule}
+
+
+
+
+\begin{twocolentry}{
+		June 2024 - present
+	}
+	\textbf{Undergraduate Researcher}, Lee Lab, WWU -- Bellingham, WA\end{twocolentry}
+
+\begin{onecolentry}
+	\begin{highlights}
+		\item Investigated roles of small non-coding RNAs in an RNAi pathway maintaining genome integrity in \textit{Tetrahymena thermophila}, combining computational biology with molecular biology techniques (Western Blot, cell culture, aseptic technique).
+		\item Developed custom bioinformatics pipelines in Python and R for genome-wide sRNA biogenesis loci identification and differential expression analysis.
+		\item Maintained live cell cultures under sterile conditions and performed protein analysis via Western Blot to characterize RNAi pathway components.
+		\item Presented findings at lab meetings, journal clubs, and the WWU SURP poster session.
+		\item Prepared media, buffers, reagents, and performed lab duties for daily lab operations.
+	\end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{
+		Spring 2025
+	}
+	\textbf{Advanced Molecular and Cell w/lab} -- BIOL 487, WWU\end{twocolentry}
+
+\begin{onecolentry}
+	\begin{highlights}
+		\item Investigated ER-associated protein degradation (ERAD) via E2 ubiquitin ligase \textit{ubc-6} in \textit{C. elegans}, a pathway directly relevant to protein quality control in cancer and neurodegeneration.
+		\item Performed Western Blots, Reverse Transcriptase PCR, and endpoint PCR to quantify misfolded protein accumulation in \textit{ubc-6} knockout lines.
+		\item Co-authored a poster presented at the Northwest Worm Meeting and co-wrote a micropublication on research findings.
+		\item Maintained detailed electronic lab notebooks using Benchling.
+	\end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{
+		Winter 2025
+	}
+	\textbf{Genomic Data Analysis} -- BIOL 477, WWU\end{twocolentry}
+
+\begin{onecolentry}
+	\begin{highlights}
+		\item Conducted mRNA differential expression analysis on \textit{Tetrahymena thermophila} datasets using DESeq2, identifying differentially expressed genes across experimental conditions.
+		\item Processed and analyzed genomic data in a Unix environment using Bash, Python, and high-performance computing resources.
+		\item Communicated findings through a written research paper and oral presentation.
+	\end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{samepage}
+	\begin{twocolentry}{
+			May 2022 - December 2022
+		}
+		\textbf{Biotech Research Intern}, Rain Incubator -- Tacoma, WA\end{twocolentry}
+	\begin{onecolentry}
+		\begin{highlights}
+			\item Designed and executed pilot PCR-based experiments for tracking European Green Crab migration.
+			\item Gained foundational experience including hypothesis development, literature review, and experimental planning.
+		\end{highlights}
+	\end{onecolentry}
+\end{samepage}
+
+
+
+
+\section{Education\secrule}
+
+\begin{twocolentry}{
+		September 2023-June 2026}
+	\textbf{B.S. Molecular and Cellular Biology}, Computer Science minor
+\end{twocolentry}
+Western Washington University -- Bellingham, WA
+
+\section{Publications\secrule}
+
+
+\begin{twocolentry}{
+		March 2024
+	}
+	\textbf{Understanding the Leadership Structure and Mentoring Model of an Extracurricular Robotics Team: Key Findings from a Case Study}
+\end{twocolentry}
+
+\vspace{0.10 cm}
+
+\begin{onecolentry}
+	\textit{SIGCSE 2024: Proceedings of the 55th ACM Technical Symposium on Computer Science Education V. 2}
+	\mbox{Hitender Oswal}, \underline{\textbf{\textit{Jon Wick}}}, \mbox{Seth Tandon}, \mbox{Ashley Brewster}, \mbox{Sushil K Oswal}
+
+	\vspace{0.10 cm}
+
+	% \href{https://doi.org/10.1145/3626253.3635603}{DOI: 10.1145/3626253.3635603}
+	\mbox{\hrefWithoutArrow{https://dl.acm.org/doi/10.1145/3626253.3635603}{DOI: 10.1145/3626253.3635603}}%
+\end{onecolentry}
+
+
+
+
+
+\begin{samepage}
+
+\section{Posters\secrule}
+
+
+
+
+
+\begin{onecolentry}
+	\textbf{Re-identification of the genomic origins of small RNAs in the model organism \textit{Tetrahymena thermophila} and characterization of those dependent on genome protective \textit{RDN2}} \newline
+	\textit{2025 SURP poster session}, October 2025.\newline
+	\underline{\textbf{Jon Wick}}, Noah Haight, Hannah Thorp, Dan Pollard, and Suzanne R. Lee
+
+	\vspace{0.2cm}
+
+	\textbf{The Role of E2 Ligases ubc-6 and 7 in ERAD in C. elegans} \newline
+	\textit{Northwest Worm Meeting}, June 2025.\newline
+	Summer Simpson, Abby Mellin, Dylan Wilding, Natalie Patch, \underline{\textbf{Jon Wick}}, Bree Nelson, Hannah Thorp, Caelin Sickler, and Lina Dahlberg
+
+	\vspace{0.2cm}
+
+	\textbf{Remapping previously sequenced 23-24 nucleotide sRNAs to the 2020 Tetrahymena thermophila Genome}\newline
+	\textit{WWU SURP poster session}, September 2024. \newline
+	\underline{\textbf{Jon Wick}}, Noah Haight, Suzanne R. Lee, Dan Pollard
+
+	\vspace{0.2cm}
+
+	\textbf{Leadership Structure and Mentoring Model of an Extracurricular Robotics Team} \newline
+	\textit{ACM Special Interest Group Computer Science Education conference}, March 2024.\newline
+	Hitender Oswal, \underline{\textbf{Jon Wick}}, Seth Tandon, Ashley Brewster, Sushil K. Oswal
+
+
+
+\end{onecolentry}
+
+\section{Awards\secrule}
+\begin{twocolentry}
+	{2025}
+	\textbf{Declan Barron Memorial Scholarship} \newline
+	Western Washington University, Dept of Biology
+\end{twocolentry}
+\begin{twocolentry}
+	{2025}
+	\textbf{WWU Biology Summer Undergraduate Research Program award} \newline
+	Western Washington University, Dept of Biology
+\end{twocolentry}
+
+
+
+\section{Additional Experience\secrule}
+
+
+\begin{twocolentry}
+	{August 2025 - June 2026}
+	\textbf {Club Lead}, Molecular Bioscience Club, WWU -- Bellingham, WA
+\end{twocolentry}
+\begin{highlights}
+	\item Organize events to build community and provide information about programs, research opportunities, and professional development to students of all course standings.
+	\item Assisted students in getting into research labs.
+	\item Collaborated with faculty within and outside of WWU on events.
+
+\end{highlights}
+
+\begin{twocolentry}
+	{February 2023 - May 2024}
+	\textbf{Computing Education Research}, Sushil K. Oswal, UW -- Tacoma, WA
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Co-authored and published a paper at the ACM SIGCSE conference on mentorship structures in STEM education.
+		\item Performed qualitative analysis on interviews and survey responses.
+	\end{highlights}
+\end{onecolentry}
+\begin{twocolentry}
+	{September 2019 - June 2023}
+	\textbf {Programming Lead}, SOTAbots FIRST Team 2557 -- Tacoma, WA
+
+
+\end{twocolentry}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Developed Code used in the semi-finals of the 2022 World Championship of FIRST Robotics Competition and 2023 district championship.
+		\item Taught students to program in Java using industry-standard design patterns.
+		\item Coordinated with other leads on the team to develop a robot, build community, perform local outreach, and obtain funding.
+
+	\end{highlights}
+\end{onecolentry}
+
+
+
+
+
+\end{document}
